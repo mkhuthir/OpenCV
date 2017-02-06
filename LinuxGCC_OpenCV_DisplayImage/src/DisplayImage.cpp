@@ -12,11 +12,11 @@ using namespace cv;
 
 int main( int argc, char** argv )
 {
-  Mat image;
+	Mat image;
 
   if(argc<2)
    {
-	  printf("\nUsage: ./DisplayImage [imagefile]\n\nExiting..");
+	  printf("\nUsage: ./DisplayImage [imagefile]\n\nExiting..\n");
 	  return -1;
    };
 
