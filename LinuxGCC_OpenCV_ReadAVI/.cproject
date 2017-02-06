@@ -71,7 +71,6 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="cdt.managedbuild.config.gnu.exe.release.1071114773.472365114" name="drop.avi" rcbsApplicability="disable" resourcePath="Release/drop.avi" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry excluding="Release/drop.avi" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
