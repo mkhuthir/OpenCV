@@ -16,7 +16,7 @@ int main( int argc, char** argv )
 
   if(argc<2)
    {
-	  printf("\nUsage: ./DisplayImage [imagefile] !\n\nExiting..");
+	  printf("\nUsage: ./DisplayImage [imagefile]\n\nExiting..");
 	  return -1;
    };
 
