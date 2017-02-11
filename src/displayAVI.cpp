@@ -22,7 +22,7 @@ int main( int argc, char** argv )
 	CvCapture* capture = cvCreateFileCapture( argv[1] );
 
 	IplImage* frame;
-/* */
+
 
 	while(1) {
 		frame = cvQueryFrame( capture );
