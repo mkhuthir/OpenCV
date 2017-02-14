@@ -1,5 +1,6 @@
 /home/mkhuthir/learnOpenCV/build/CMakeFiles/edit_cache.dir
 /home/mkhuthir/learnOpenCV/build/CMakeFiles/displayImage.dir
 /home/mkhuthir/learnOpenCV/build/CMakeFiles/displayAVI.dir
-/home/mkhuthir/learnOpenCV/build/CMakeFiles/AVIslider.dir
 /home/mkhuthir/learnOpenCV/build/CMakeFiles/rebuild_cache.dir
+/home/mkhuthir/learnOpenCV/build/CMakeFiles/sliderAVI.dir
+/home/mkhuthir/learnOpenCV/build/CMakeFiles/smoothImage.dir

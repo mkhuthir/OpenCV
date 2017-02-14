@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/mkhuthir/learnOpenCV/src/AVIslider.cpp
+/home/mkhuthir/learnOpenCV/src/sliderAVI.cpp
 stdio.h
 -
 iostream

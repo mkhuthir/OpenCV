@@ -137,44 +137,30 @@ displayAVI/fast:
 .PHONY : displayAVI/fast
 
 #=============================================================================
-# Target rules for targets named AVIslider
+# Target rules for targets named sliderAVI
 
 # Build rule for target.
-AVIslider: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 AVIslider
-.PHONY : AVIslider
+sliderAVI: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sliderAVI
+.PHONY : sliderAVI
 
 # fast build rule for target.
-AVIslider/fast:
-	$(MAKE) -f CMakeFiles/AVIslider.dir/build.make CMakeFiles/AVIslider.dir/build
-.PHONY : AVIslider/fast
+sliderAVI/fast:
+	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/build
+.PHONY : sliderAVI/fast
 
-src/AVIslider.o: src/AVIslider.cpp.o
+#=============================================================================
+# Target rules for targets named smoothImage
 
-.PHONY : src/AVIslider.o
+# Build rule for target.
+smoothImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 smoothImage
+.PHONY : smoothImage
 
-# target to build an object file
-src/AVIslider.cpp.o:
-	$(MAKE) -f CMakeFiles/AVIslider.dir/build.make CMakeFiles/AVIslider.dir/src/AVIslider.cpp.o
-.PHONY : src/AVIslider.cpp.o
-
-src/AVIslider.i: src/AVIslider.cpp.i
-
-.PHONY : src/AVIslider.i
-
-# target to preprocess a source file
-src/AVIslider.cpp.i:
-	$(MAKE) -f CMakeFiles/AVIslider.dir/build.make CMakeFiles/AVIslider.dir/src/AVIslider.cpp.i
-.PHONY : src/AVIslider.cpp.i
-
-src/AVIslider.s: src/AVIslider.cpp.s
-
-.PHONY : src/AVIslider.s
-
-# target to generate assembly for a file
-src/AVIslider.cpp.s:
-	$(MAKE) -f CMakeFiles/AVIslider.dir/build.make CMakeFiles/AVIslider.dir/src/AVIslider.cpp.s
-.PHONY : src/AVIslider.cpp.s
+# fast build rule for target.
+smoothImage/fast:
+	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/build
+.PHONY : smoothImage/fast
 
 src/displayAVI.o: src/displayAVI.cpp.o
 
@@ -230,6 +216,60 @@ src/displayImage.cpp.s:
 	$(MAKE) -f CMakeFiles/displayImage.dir/build.make CMakeFiles/displayImage.dir/src/displayImage.cpp.s
 .PHONY : src/displayImage.cpp.s
 
+src/sliderAVI.o: src/sliderAVI.cpp.o
+
+.PHONY : src/sliderAVI.o
+
+# target to build an object file
+src/sliderAVI.cpp.o:
+	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/src/sliderAVI.cpp.o
+.PHONY : src/sliderAVI.cpp.o
+
+src/sliderAVI.i: src/sliderAVI.cpp.i
+
+.PHONY : src/sliderAVI.i
+
+# target to preprocess a source file
+src/sliderAVI.cpp.i:
+	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/src/sliderAVI.cpp.i
+.PHONY : src/sliderAVI.cpp.i
+
+src/sliderAVI.s: src/sliderAVI.cpp.s
+
+.PHONY : src/sliderAVI.s
+
+# target to generate assembly for a file
+src/sliderAVI.cpp.s:
+	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/src/sliderAVI.cpp.s
+.PHONY : src/sliderAVI.cpp.s
+
+src/smoothImage.o: src/smoothImage.cpp.o
+
+.PHONY : src/smoothImage.o
+
+# target to build an object file
+src/smoothImage.cpp.o:
+	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/src/smoothImage.cpp.o
+.PHONY : src/smoothImage.cpp.o
+
+src/smoothImage.i: src/smoothImage.cpp.i
+
+.PHONY : src/smoothImage.i
+
+# target to preprocess a source file
+src/smoothImage.cpp.i:
+	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/src/smoothImage.cpp.i
+.PHONY : src/smoothImage.cpp.i
+
+src/smoothImage.s: src/smoothImage.cpp.s
+
+.PHONY : src/smoothImage.s
+
+# target to generate assembly for a file
+src/smoothImage.cpp.s:
+	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/src/smoothImage.cpp.s
+.PHONY : src/smoothImage.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -239,17 +279,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... displayImage"
 	@echo "... displayAVI"
-	@echo "... AVIslider"
 	@echo "... rebuild_cache"
-	@echo "... src/AVIslider.o"
-	@echo "... src/AVIslider.i"
-	@echo "... src/AVIslider.s"
+	@echo "... sliderAVI"
+	@echo "... smoothImage"
 	@echo "... src/displayAVI.o"
 	@echo "... src/displayAVI.i"
 	@echo "... src/displayAVI.s"
 	@echo "... src/displayImage.o"
 	@echo "... src/displayImage.i"
 	@echo "... src/displayImage.s"
+	@echo "... src/sliderAVI.o"
+	@echo "... src/sliderAVI.i"
+	@echo "... src/sliderAVI.s"
+	@echo "... src/smoothImage.o"
+	@echo "... src/smoothImage.i"
+	@echo "... src/smoothImage.s"
 .PHONY : help
 
 
