@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/mkhuthir/learnOpenCV/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named displayImage
+
+# Build rule for target.
+displayImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 displayImage
+.PHONY : displayImage
+
+# fast build rule for target.
+displayImage/fast:
+	$(MAKE) -f CMakeFiles/displayImage.dir/build.make CMakeFiles/displayImage.dir/build
+.PHONY : displayImage/fast
+
+#=============================================================================
 # Target rules for targets named displayAVI
 
 # Build rule for target.
@@ -124,17 +137,44 @@ displayAVI/fast:
 .PHONY : displayAVI/fast
 
 #=============================================================================
-# Target rules for targets named displayImage
+# Target rules for targets named AVIslider
 
 # Build rule for target.
-displayImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 displayImage
-.PHONY : displayImage
+AVIslider: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AVIslider
+.PHONY : AVIslider
 
 # fast build rule for target.
-displayImage/fast:
-	$(MAKE) -f CMakeFiles/displayImage.dir/build.make CMakeFiles/displayImage.dir/build
-.PHONY : displayImage/fast
+AVIslider/fast:
+	$(MAKE) -f CMakeFiles/AVIslider.dir/build.make CMakeFiles/AVIslider.dir/build
+.PHONY : AVIslider/fast
+
+src/AVIslider.o: src/AVIslider.cpp.o
+
+.PHONY : src/AVIslider.o
+
+# target to build an object file
+src/AVIslider.cpp.o:
+	$(MAKE) -f CMakeFiles/AVIslider.dir/build.make CMakeFiles/AVIslider.dir/src/AVIslider.cpp.o
+.PHONY : src/AVIslider.cpp.o
+
+src/AVIslider.i: src/AVIslider.cpp.i
+
+.PHONY : src/AVIslider.i
+
+# target to preprocess a source file
+src/AVIslider.cpp.i:
+	$(MAKE) -f CMakeFiles/AVIslider.dir/build.make CMakeFiles/AVIslider.dir/src/AVIslider.cpp.i
+.PHONY : src/AVIslider.cpp.i
+
+src/AVIslider.s: src/AVIslider.cpp.s
+
+.PHONY : src/AVIslider.s
+
+# target to generate assembly for a file
+src/AVIslider.cpp.s:
+	$(MAKE) -f CMakeFiles/AVIslider.dir/build.make CMakeFiles/AVIslider.dir/src/AVIslider.cpp.s
+.PHONY : src/AVIslider.cpp.s
 
 src/displayAVI.o: src/displayAVI.cpp.o
 
@@ -196,10 +236,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... displayAVI"
 	@echo "... edit_cache"
 	@echo "... displayImage"
+	@echo "... displayAVI"
+	@echo "... AVIslider"
+	@echo "... rebuild_cache"
+	@echo "... src/AVIslider.o"
+	@echo "... src/AVIslider.i"
+	@echo "... src/AVIslider.s"
 	@echo "... src/displayAVI.o"
 	@echo "... src/displayAVI.i"
 	@echo "... src/displayAVI.s"

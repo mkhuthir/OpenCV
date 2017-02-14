@@ -10,3 +10,6 @@ target_link_libraries	(displayImage 	${OpenCV_LIBS})
 add_executable          (displayAVI 	src/displayAVI.cpp)
 target_link_libraries   (displayAVI 	${OpenCV_LIBS})
 
+add_executable          (sliderAVI 	src/sliderAVI.cpp)
+target_link_libraries   (sliderAVI 	${OpenCV_LIBS})
+

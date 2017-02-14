@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /home/mkhuthir/learnOpenCV
 CMAKE_BINARY_DIR = /home/mkhuthir/learnOpenCV/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/displayImage.dir
+
+# All Build rule for target.
+CMakeFiles/displayImage.dir/all:
+	$(MAKE) -f CMakeFiles/displayImage.dir/build.make CMakeFiles/displayImage.dir/depend
+	$(MAKE) -f CMakeFiles/displayImage.dir/build.make CMakeFiles/displayImage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/learnOpenCV/build/CMakeFiles --progress-num=5,6 "Built target displayImage"
+.PHONY : CMakeFiles/displayImage.dir/all
+
+# Include target in all.
+all: CMakeFiles/displayImage.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/displayImage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/learnOpenCV/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/displayImage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/learnOpenCV/build/CMakeFiles 0
+.PHONY : CMakeFiles/displayImage.dir/rule
+
+# Convenience name for target.
+displayImage: CMakeFiles/displayImage.dir/rule
+
+.PHONY : displayImage
+
+# clean rule for target.
+CMakeFiles/displayImage.dir/clean:
+	$(MAKE) -f CMakeFiles/displayImage.dir/build.make CMakeFiles/displayImage.dir/clean
+.PHONY : CMakeFiles/displayImage.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/displayImage.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/displayAVI.dir
 
 # All Build rule for target.
 CMakeFiles/displayAVI.dir/all:
 	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/depend
 	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/learnOpenCV/build/CMakeFiles --progress-num=1,2 "Built target displayAVI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/learnOpenCV/build/CMakeFiles --progress-num=3,4 "Built target displayAVI"
 .PHONY : CMakeFiles/displayAVI.dir/all
 
 # Include target in all.
@@ -97,39 +134,39 @@ clean: CMakeFiles/displayAVI.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/displayImage.dir
+# Target rules for target CMakeFiles/AVIslider.dir
 
 # All Build rule for target.
-CMakeFiles/displayImage.dir/all:
-	$(MAKE) -f CMakeFiles/displayImage.dir/build.make CMakeFiles/displayImage.dir/depend
-	$(MAKE) -f CMakeFiles/displayImage.dir/build.make CMakeFiles/displayImage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/learnOpenCV/build/CMakeFiles --progress-num=3,4 "Built target displayImage"
-.PHONY : CMakeFiles/displayImage.dir/all
+CMakeFiles/AVIslider.dir/all:
+	$(MAKE) -f CMakeFiles/AVIslider.dir/build.make CMakeFiles/AVIslider.dir/depend
+	$(MAKE) -f CMakeFiles/AVIslider.dir/build.make CMakeFiles/AVIslider.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/learnOpenCV/build/CMakeFiles --progress-num=1,2 "Built target AVIslider"
+.PHONY : CMakeFiles/AVIslider.dir/all
 
 # Include target in all.
-all: CMakeFiles/displayImage.dir/all
+all: CMakeFiles/AVIslider.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/displayImage.dir/rule: cmake_check_build_system
+CMakeFiles/AVIslider.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/learnOpenCV/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/displayImage.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/AVIslider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/learnOpenCV/build/CMakeFiles 0
-.PHONY : CMakeFiles/displayImage.dir/rule
+.PHONY : CMakeFiles/AVIslider.dir/rule
 
 # Convenience name for target.
-displayImage: CMakeFiles/displayImage.dir/rule
+AVIslider: CMakeFiles/AVIslider.dir/rule
 
-.PHONY : displayImage
-
-# clean rule for target.
-CMakeFiles/displayImage.dir/clean:
-	$(MAKE) -f CMakeFiles/displayImage.dir/build.make CMakeFiles/displayImage.dir/clean
-.PHONY : CMakeFiles/displayImage.dir/clean
+.PHONY : AVIslider
 
 # clean rule for target.
-clean: CMakeFiles/displayImage.dir/clean
+CMakeFiles/AVIslider.dir/clean:
+	$(MAKE) -f CMakeFiles/AVIslider.dir/build.make CMakeFiles/AVIslider.dir/clean
+.PHONY : CMakeFiles/AVIslider.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/AVIslider.dir/clean
 
 .PHONY : clean
 

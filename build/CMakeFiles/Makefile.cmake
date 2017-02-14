@@ -45,6 +45,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/displayAVI.dir/DependInfo.cmake"
   "CMakeFiles/displayImage.dir/DependInfo.cmake"
+  "CMakeFiles/displayAVI.dir/DependInfo.cmake"
+  "CMakeFiles/AVIslider.dir/DependInfo.cmake"
   )
