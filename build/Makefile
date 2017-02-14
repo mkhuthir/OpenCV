@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named pyrdownImage
+
+# Build rule for target.
+pyrdownImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pyrdownImage
+.PHONY : pyrdownImage
+
+# fast build rule for target.
+pyrdownImage/fast:
+	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/build
+.PHONY : pyrdownImage/fast
+
+#=============================================================================
 # Target rules for targets named displayImage
 
 # Build rule for target.
@@ -216,6 +229,33 @@ src/displayImage.cpp.s:
 	$(MAKE) -f CMakeFiles/displayImage.dir/build.make CMakeFiles/displayImage.dir/src/displayImage.cpp.s
 .PHONY : src/displayImage.cpp.s
 
+src/pyrdownImage.o: src/pyrdownImage.cpp.o
+
+.PHONY : src/pyrdownImage.o
+
+# target to build an object file
+src/pyrdownImage.cpp.o:
+	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/src/pyrdownImage.cpp.o
+.PHONY : src/pyrdownImage.cpp.o
+
+src/pyrdownImage.i: src/pyrdownImage.cpp.i
+
+.PHONY : src/pyrdownImage.i
+
+# target to preprocess a source file
+src/pyrdownImage.cpp.i:
+	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/src/pyrdownImage.cpp.i
+.PHONY : src/pyrdownImage.cpp.i
+
+src/pyrdownImage.s: src/pyrdownImage.cpp.s
+
+.PHONY : src/pyrdownImage.s
+
+# target to generate assembly for a file
+src/pyrdownImage.cpp.s:
+	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/src/pyrdownImage.cpp.s
+.PHONY : src/pyrdownImage.cpp.s
+
 src/sliderAVI.o: src/sliderAVI.cpp.o
 
 .PHONY : src/sliderAVI.o
@@ -276,6 +316,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... pyrdownImage"
 	@echo "... edit_cache"
 	@echo "... displayImage"
 	@echo "... displayAVI"
@@ -288,6 +329,9 @@ help:
 	@echo "... src/displayImage.o"
 	@echo "... src/displayImage.i"
 	@echo "... src/displayImage.s"
+	@echo "... src/pyrdownImage.o"
+	@echo "... src/pyrdownImage.i"
+	@echo "... src/pyrdownImage.s"
 	@echo "... src/sliderAVI.o"
 	@echo "... src/sliderAVI.i"
 	@echo "... src/sliderAVI.s"

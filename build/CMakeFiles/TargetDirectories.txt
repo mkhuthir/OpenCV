@@ -1,3 +1,4 @@
+/home/mkhuthir/learnOpenCV/build/CMakeFiles/pyrdownImage.dir
 /home/mkhuthir/learnOpenCV/build/CMakeFiles/edit_cache.dir
 /home/mkhuthir/learnOpenCV/build/CMakeFiles/displayImage.dir
 /home/mkhuthir/learnOpenCV/build/CMakeFiles/displayAVI.dir
