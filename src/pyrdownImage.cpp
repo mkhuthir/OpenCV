@@ -20,22 +20,32 @@ IplImage* doPyrDown(
 
 int main( int argc, char** argv )
 {
-  IplImage* img = cvLoadImage( argv[1] );
+  	if(argc<2)
+		{
+		printf("Usage: ./pyrdownImage filename\n\nExiting..\n");
+		return -1;
+		};
 
-  IplImage* img2 = cvCreateImage( cvSize( img->width/2,img->height/2 ), img->depth, img->nChannels);
+    IplImage* img = cvLoadImage( argv[1] );
 
-  cvNamedWindow(argv[1], CV_WINDOW_AUTOSIZE );
-  cvNamedWindow("PyrDown", CV_WINDOW_AUTOSIZE );
-  cvShowImage(argv[1], img );
+    IplImage* img2 = cvCreateImage( cvSize( img->width/2,img->height/2 ), img->depth, img->nChannels);
+
+    cvNamedWindow(argv[1], CV_WINDOW_AUTOSIZE );
+    cvNamedWindow("PyrDown", CV_WINDOW_AUTOSIZE );
   
-  img2 = doPyrDown( img );
-  cvShowImage("PyrDown", img2 );
+    img2 = doPyrDown( img );
+
+    cvShowImage(argv[1], img );
+    cvShowImage("PyrDown", img2 );
   
-  cvWaitKey(0);
+    cvWaitKey(0);
   
-  cvReleaseImage( &img );
-  cvReleaseImage( &img2 );
+    cvReleaseImage( &img );
+    cvReleaseImage( &img2 );
   
-  cvDestroyWindow(argv[1]);
-  cvDestroyWindow("PyrDown");
+    cvDestroyWindow(argv[1]);
+    cvDestroyWindow("PyrDown");
+
+    printf("Exiting..\n");
+    return 0;
 }

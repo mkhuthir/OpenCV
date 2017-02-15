@@ -150,6 +150,19 @@ displayAVI/fast:
 .PHONY : displayAVI/fast
 
 #=============================================================================
+# Target rules for targets named canny
+
+# Build rule for target.
+canny: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 canny
+.PHONY : canny
+
+# fast build rule for target.
+canny/fast:
+	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
+.PHONY : canny/fast
+
+#=============================================================================
 # Target rules for targets named sliderAVI
 
 # Build rule for target.
@@ -174,6 +187,33 @@ smoothImage: cmake_check_build_system
 smoothImage/fast:
 	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/build
 .PHONY : smoothImage/fast
+
+src/canny.o: src/canny.cpp.o
+
+.PHONY : src/canny.o
+
+# target to build an object file
+src/canny.cpp.o:
+	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/src/canny.cpp.o
+.PHONY : src/canny.cpp.o
+
+src/canny.i: src/canny.cpp.i
+
+.PHONY : src/canny.i
+
+# target to preprocess a source file
+src/canny.cpp.i:
+	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/src/canny.cpp.i
+.PHONY : src/canny.cpp.i
+
+src/canny.s: src/canny.cpp.s
+
+.PHONY : src/canny.s
+
+# target to generate assembly for a file
+src/canny.cpp.s:
+	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/src/canny.cpp.s
+.PHONY : src/canny.cpp.s
 
 src/displayAVI.o: src/displayAVI.cpp.o
 
@@ -321,8 +361,12 @@ help:
 	@echo "... displayImage"
 	@echo "... displayAVI"
 	@echo "... rebuild_cache"
+	@echo "... canny"
 	@echo "... sliderAVI"
 	@echo "... smoothImage"
+	@echo "... src/canny.o"
+	@echo "... src/canny.i"
+	@echo "... src/canny.s"
 	@echo "... src/displayAVI.o"
 	@echo "... src/displayAVI.i"
 	@echo "... src/displayAVI.s"
