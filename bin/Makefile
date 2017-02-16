@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/mkhuthir/openCV/bin
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named grayVideo
+
+# Build rule for target.
+grayVideo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 grayVideo
+.PHONY : grayVideo
+
+# fast build rule for target.
+grayVideo/fast:
+	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/build
+.PHONY : grayVideo/fast
 
 #=============================================================================
 # Target rules for targets named pyrdownImage
@@ -321,6 +334,33 @@ src/displayAVI.cpp.s:
 	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/src/displayAVI.cpp.s
 .PHONY : src/displayAVI.cpp.s
 
+src/grayVideo.o: src/grayVideo.cpp.o
+
+.PHONY : src/grayVideo.o
+
+# target to build an object file
+src/grayVideo.cpp.o:
+	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/src/grayVideo.cpp.o
+.PHONY : src/grayVideo.cpp.o
+
+src/grayVideo.i: src/grayVideo.cpp.i
+
+.PHONY : src/grayVideo.i
+
+# target to preprocess a source file
+src/grayVideo.cpp.i:
+	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/src/grayVideo.cpp.i
+.PHONY : src/grayVideo.cpp.i
+
+src/grayVideo.s: src/grayVideo.cpp.s
+
+.PHONY : src/grayVideo.s
+
+# target to generate assembly for a file
+src/grayVideo.cpp.s:
+	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/src/grayVideo.cpp.s
+.PHONY : src/grayVideo.cpp.s
+
 src/pipe.o: src/pipe.cpp.o
 
 .PHONY : src/pipe.o
@@ -516,8 +556,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... grayVideo"
 	@echo "... pyrdownImage"
 	@echo "... smoothImage"
 	@echo "... sliderAVI"
@@ -537,6 +578,9 @@ help:
 	@echo "... src/displayAVI.o"
 	@echo "... src/displayAVI.i"
 	@echo "... src/displayAVI.s"
+	@echo "... src/grayVideo.o"
+	@echo "... src/grayVideo.i"
+	@echo "... src/grayVideo.s"
 	@echo "... src/pipe.o"
 	@echo "... src/pipe.i"
 	@echo "... src/pipe.s"

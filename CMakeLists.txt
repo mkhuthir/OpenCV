@@ -19,6 +19,7 @@ add_executable(pipe2        src/pipe2.cpp)
 add_executable(showImage    src/showImage.cpp)
 add_executable(showImage2   src/showImage2.cpp)
 add_executable(camera       src/camera.cpp)
+add_executable(grayVideo    src/grayVideo.cpp)
 
 
 target_link_libraries(sliderAVI 	${OpenCV_LIBS})
@@ -31,3 +32,4 @@ target_link_libraries(pipe2         ${OpenCV_LIBS})
 target_link_libraries(showImage     ${OpenCV_LIBS})
 target_link_libraries(showImage2    ${OpenCV_LIBS})
 target_link_libraries(camera        ${OpenCV_LIBS})
+target_link_libraries(grayVideo     ${OpenCV_LIBS})
