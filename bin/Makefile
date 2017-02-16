@@ -111,82 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named showImage2
+# Target rules for targets named pyrdownImage
 
 # Build rule for target.
-showImage2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 showImage2
-.PHONY : showImage2
+pyrdownImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pyrdownImage
+.PHONY : pyrdownImage
 
 # fast build rule for target.
-showImage2/fast:
-	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/build
-.PHONY : showImage2/fast
-
-#=============================================================================
-# Target rules for targets named showImage
-
-# Build rule for target.
-showImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 showImage
-.PHONY : showImage
-
-# fast build rule for target.
-showImage/fast:
-	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/build
-.PHONY : showImage/fast
-
-#=============================================================================
-# Target rules for targets named cannypyr
-
-# Build rule for target.
-cannypyr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cannypyr
-.PHONY : cannypyr
-
-# fast build rule for target.
-cannypyr/fast:
-	$(MAKE) -f CMakeFiles/cannypyr.dir/build.make CMakeFiles/cannypyr.dir/build
-.PHONY : cannypyr/fast
-
-#=============================================================================
-# Target rules for targets named displayAVI
-
-# Build rule for target.
-displayAVI: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 displayAVI
-.PHONY : displayAVI
-
-# fast build rule for target.
-displayAVI/fast:
-	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/build
-.PHONY : displayAVI/fast
-
-#=============================================================================
-# Target rules for targets named canny
-
-# Build rule for target.
-canny: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 canny
-.PHONY : canny
-
-# fast build rule for target.
-canny/fast:
-	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
-.PHONY : canny/fast
-
-#=============================================================================
-# Target rules for targets named sliderAVI
-
-# Build rule for target.
-sliderAVI: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sliderAVI
-.PHONY : sliderAVI
-
-# fast build rule for target.
-sliderAVI/fast:
-	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/build
-.PHONY : sliderAVI/fast
+pyrdownImage/fast:
+	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/build
+.PHONY : pyrdownImage/fast
 
 #=============================================================================
 # Target rules for targets named smoothImage
@@ -202,17 +137,95 @@ smoothImage/fast:
 .PHONY : smoothImage/fast
 
 #=============================================================================
-# Target rules for targets named pyrdownImage
+# Target rules for targets named sliderAVI
 
 # Build rule for target.
-pyrdownImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pyrdownImage
-.PHONY : pyrdownImage
+sliderAVI: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sliderAVI
+.PHONY : sliderAVI
 
 # fast build rule for target.
-pyrdownImage/fast:
-	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/build
-.PHONY : pyrdownImage/fast
+sliderAVI/fast:
+	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/build
+.PHONY : sliderAVI/fast
+
+#=============================================================================
+# Target rules for targets named canny
+
+# Build rule for target.
+canny: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 canny
+.PHONY : canny
+
+# fast build rule for target.
+canny/fast:
+	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
+.PHONY : canny/fast
+
+#=============================================================================
+# Target rules for targets named displayAVI
+
+# Build rule for target.
+displayAVI: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 displayAVI
+.PHONY : displayAVI
+
+# fast build rule for target.
+displayAVI/fast:
+	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/build
+.PHONY : displayAVI/fast
+
+#=============================================================================
+# Target rules for targets named pipe
+
+# Build rule for target.
+pipe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pipe
+.PHONY : pipe
+
+# fast build rule for target.
+pipe/fast:
+	$(MAKE) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/build
+.PHONY : pipe/fast
+
+#=============================================================================
+# Target rules for targets named pipe2
+
+# Build rule for target.
+pipe2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pipe2
+.PHONY : pipe2
+
+# fast build rule for target.
+pipe2/fast:
+	$(MAKE) -f CMakeFiles/pipe2.dir/build.make CMakeFiles/pipe2.dir/build
+.PHONY : pipe2/fast
+
+#=============================================================================
+# Target rules for targets named showImage
+
+# Build rule for target.
+showImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 showImage
+.PHONY : showImage
+
+# fast build rule for target.
+showImage/fast:
+	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/build
+.PHONY : showImage/fast
+
+#=============================================================================
+# Target rules for targets named showImage2
+
+# Build rule for target.
+showImage2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 showImage2
+.PHONY : showImage2
+
+# fast build rule for target.
+showImage2/fast:
+	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/build
+.PHONY : showImage2/fast
 
 src/canny.o: src/canny.cpp.o
 
@@ -241,33 +254,6 @@ src/canny.cpp.s:
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/src/canny.cpp.s
 .PHONY : src/canny.cpp.s
 
-src/cannypyr.o: src/cannypyr.cpp.o
-
-.PHONY : src/cannypyr.o
-
-# target to build an object file
-src/cannypyr.cpp.o:
-	$(MAKE) -f CMakeFiles/cannypyr.dir/build.make CMakeFiles/cannypyr.dir/src/cannypyr.cpp.o
-.PHONY : src/cannypyr.cpp.o
-
-src/cannypyr.i: src/cannypyr.cpp.i
-
-.PHONY : src/cannypyr.i
-
-# target to preprocess a source file
-src/cannypyr.cpp.i:
-	$(MAKE) -f CMakeFiles/cannypyr.dir/build.make CMakeFiles/cannypyr.dir/src/cannypyr.cpp.i
-.PHONY : src/cannypyr.cpp.i
-
-src/cannypyr.s: src/cannypyr.cpp.s
-
-.PHONY : src/cannypyr.s
-
-# target to generate assembly for a file
-src/cannypyr.cpp.s:
-	$(MAKE) -f CMakeFiles/cannypyr.dir/build.make CMakeFiles/cannypyr.dir/src/cannypyr.cpp.s
-.PHONY : src/cannypyr.cpp.s
-
 src/displayAVI.o: src/displayAVI.cpp.o
 
 .PHONY : src/displayAVI.o
@@ -294,6 +280,60 @@ src/displayAVI.s: src/displayAVI.cpp.s
 src/displayAVI.cpp.s:
 	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/src/displayAVI.cpp.s
 .PHONY : src/displayAVI.cpp.s
+
+src/pipe.o: src/pipe.cpp.o
+
+.PHONY : src/pipe.o
+
+# target to build an object file
+src/pipe.cpp.o:
+	$(MAKE) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/src/pipe.cpp.o
+.PHONY : src/pipe.cpp.o
+
+src/pipe.i: src/pipe.cpp.i
+
+.PHONY : src/pipe.i
+
+# target to preprocess a source file
+src/pipe.cpp.i:
+	$(MAKE) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/src/pipe.cpp.i
+.PHONY : src/pipe.cpp.i
+
+src/pipe.s: src/pipe.cpp.s
+
+.PHONY : src/pipe.s
+
+# target to generate assembly for a file
+src/pipe.cpp.s:
+	$(MAKE) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/src/pipe.cpp.s
+.PHONY : src/pipe.cpp.s
+
+src/pipe2.o: src/pipe2.cpp.o
+
+.PHONY : src/pipe2.o
+
+# target to build an object file
+src/pipe2.cpp.o:
+	$(MAKE) -f CMakeFiles/pipe2.dir/build.make CMakeFiles/pipe2.dir/src/pipe2.cpp.o
+.PHONY : src/pipe2.cpp.o
+
+src/pipe2.i: src/pipe2.cpp.i
+
+.PHONY : src/pipe2.i
+
+# target to preprocess a source file
+src/pipe2.cpp.i:
+	$(MAKE) -f CMakeFiles/pipe2.dir/build.make CMakeFiles/pipe2.dir/src/pipe2.cpp.i
+.PHONY : src/pipe2.cpp.i
+
+src/pipe2.s: src/pipe2.cpp.s
+
+.PHONY : src/pipe2.s
+
+# target to generate assembly for a file
+src/pipe2.cpp.s:
+	$(MAKE) -f CMakeFiles/pipe2.dir/build.make CMakeFiles/pipe2.dir/src/pipe2.cpp.s
+.PHONY : src/pipe2.cpp.s
 
 src/pyrdownImage.o: src/pyrdownImage.cpp.o
 
@@ -437,24 +477,28 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... showImage2"
-	@echo "... showImage"
-	@echo "... cannypyr"
-	@echo "... displayAVI"
-	@echo "... rebuild_cache"
-	@echo "... canny"
-	@echo "... sliderAVI"
-	@echo "... smoothImage"
 	@echo "... pyrdownImage"
+	@echo "... smoothImage"
+	@echo "... sliderAVI"
+	@echo "... canny"
+	@echo "... rebuild_cache"
+	@echo "... displayAVI"
+	@echo "... pipe"
+	@echo "... pipe2"
+	@echo "... showImage"
+	@echo "... showImage2"
 	@echo "... src/canny.o"
 	@echo "... src/canny.i"
 	@echo "... src/canny.s"
-	@echo "... src/cannypyr.o"
-	@echo "... src/cannypyr.i"
-	@echo "... src/cannypyr.s"
 	@echo "... src/displayAVI.o"
 	@echo "... src/displayAVI.i"
 	@echo "... src/displayAVI.s"
+	@echo "... src/pipe.o"
+	@echo "... src/pipe.i"
+	@echo "... src/pipe.s"
+	@echo "... src/pipe2.o"
+	@echo "... src/pipe2.i"
+	@echo "... src/pipe2.s"
 	@echo "... src/pyrdownImage.o"
 	@echo "... src/pyrdownImage.i"
 	@echo "... src/pyrdownImage.s"

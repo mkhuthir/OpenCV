@@ -60,150 +60,113 @@ CMAKE_SOURCE_DIR = /home/mkhuthir/openCV
 CMAKE_BINARY_DIR = /home/mkhuthir/openCV/bin
 
 #=============================================================================
-# Target rules for target CMakeFiles/showImage2.dir
+# Target rules for target CMakeFiles/pyrdownImage.dir
 
 # All Build rule for target.
-CMakeFiles/showImage2.dir/all:
-	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/depend
-	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=11,12 "Built target showImage2"
-.PHONY : CMakeFiles/showImage2.dir/all
+CMakeFiles/pyrdownImage.dir/all:
+	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/depend
+	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=9,10 "Built target pyrdownImage"
+.PHONY : CMakeFiles/pyrdownImage.dir/all
 
 # Include target in all.
-all: CMakeFiles/showImage2.dir/all
+all: CMakeFiles/pyrdownImage.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/showImage2.dir/rule: cmake_check_build_system
+CMakeFiles/pyrdownImage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/showImage2.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pyrdownImage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 0
-.PHONY : CMakeFiles/showImage2.dir/rule
+.PHONY : CMakeFiles/pyrdownImage.dir/rule
 
 # Convenience name for target.
-showImage2: CMakeFiles/showImage2.dir/rule
+pyrdownImage: CMakeFiles/pyrdownImage.dir/rule
 
-.PHONY : showImage2
-
-# clean rule for target.
-CMakeFiles/showImage2.dir/clean:
-	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/clean
-.PHONY : CMakeFiles/showImage2.dir/clean
+.PHONY : pyrdownImage
 
 # clean rule for target.
-clean: CMakeFiles/showImage2.dir/clean
+CMakeFiles/pyrdownImage.dir/clean:
+	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/clean
+.PHONY : CMakeFiles/pyrdownImage.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pyrdownImage.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/showImage.dir
+# Target rules for target CMakeFiles/smoothImage.dir
 
 # All Build rule for target.
-CMakeFiles/showImage.dir/all:
-	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/depend
-	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=9,10 "Built target showImage"
-.PHONY : CMakeFiles/showImage.dir/all
+CMakeFiles/smoothImage.dir/all:
+	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/depend
+	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=17,18 "Built target smoothImage"
+.PHONY : CMakeFiles/smoothImage.dir/all
 
 # Include target in all.
-all: CMakeFiles/showImage.dir/all
+all: CMakeFiles/smoothImage.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/showImage.dir/rule: cmake_check_build_system
+CMakeFiles/smoothImage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/showImage.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/smoothImage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 0
-.PHONY : CMakeFiles/showImage.dir/rule
+.PHONY : CMakeFiles/smoothImage.dir/rule
 
 # Convenience name for target.
-showImage: CMakeFiles/showImage.dir/rule
+smoothImage: CMakeFiles/smoothImage.dir/rule
 
-.PHONY : showImage
-
-# clean rule for target.
-CMakeFiles/showImage.dir/clean:
-	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/clean
-.PHONY : CMakeFiles/showImage.dir/clean
+.PHONY : smoothImage
 
 # clean rule for target.
-clean: CMakeFiles/showImage.dir/clean
+CMakeFiles/smoothImage.dir/clean:
+	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/clean
+.PHONY : CMakeFiles/smoothImage.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/smoothImage.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cannypyr.dir
+# Target rules for target CMakeFiles/sliderAVI.dir
 
 # All Build rule for target.
-CMakeFiles/cannypyr.dir/all:
-	$(MAKE) -f CMakeFiles/cannypyr.dir/build.make CMakeFiles/cannypyr.dir/depend
-	$(MAKE) -f CMakeFiles/cannypyr.dir/build.make CMakeFiles/cannypyr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=3,4 "Built target cannypyr"
-.PHONY : CMakeFiles/cannypyr.dir/all
+CMakeFiles/sliderAVI.dir/all:
+	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/depend
+	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=15,16 "Built target sliderAVI"
+.PHONY : CMakeFiles/sliderAVI.dir/all
 
 # Include target in all.
-all: CMakeFiles/cannypyr.dir/all
+all: CMakeFiles/sliderAVI.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cannypyr.dir/rule: cmake_check_build_system
+CMakeFiles/sliderAVI.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cannypyr.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sliderAVI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 0
-.PHONY : CMakeFiles/cannypyr.dir/rule
+.PHONY : CMakeFiles/sliderAVI.dir/rule
 
 # Convenience name for target.
-cannypyr: CMakeFiles/cannypyr.dir/rule
+sliderAVI: CMakeFiles/sliderAVI.dir/rule
 
-.PHONY : cannypyr
-
-# clean rule for target.
-CMakeFiles/cannypyr.dir/clean:
-	$(MAKE) -f CMakeFiles/cannypyr.dir/build.make CMakeFiles/cannypyr.dir/clean
-.PHONY : CMakeFiles/cannypyr.dir/clean
+.PHONY : sliderAVI
 
 # clean rule for target.
-clean: CMakeFiles/cannypyr.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/displayAVI.dir
-
-# All Build rule for target.
-CMakeFiles/displayAVI.dir/all:
-	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/depend
-	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=5,6 "Built target displayAVI"
-.PHONY : CMakeFiles/displayAVI.dir/all
-
-# Include target in all.
-all: CMakeFiles/displayAVI.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/displayAVI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/displayAVI.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 0
-.PHONY : CMakeFiles/displayAVI.dir/rule
-
-# Convenience name for target.
-displayAVI: CMakeFiles/displayAVI.dir/rule
-
-.PHONY : displayAVI
+CMakeFiles/sliderAVI.dir/clean:
+	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/clean
+.PHONY : CMakeFiles/sliderAVI.dir/clean
 
 # clean rule for target.
-CMakeFiles/displayAVI.dir/clean:
-	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/clean
-.PHONY : CMakeFiles/displayAVI.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/displayAVI.dir/clean
+clean: CMakeFiles/sliderAVI.dir/clean
 
 .PHONY : clean
 
@@ -245,113 +208,187 @@ clean: CMakeFiles/canny.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/sliderAVI.dir
+# Target rules for target CMakeFiles/displayAVI.dir
 
 # All Build rule for target.
-CMakeFiles/sliderAVI.dir/all:
-	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/depend
-	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=13,14 "Built target sliderAVI"
-.PHONY : CMakeFiles/sliderAVI.dir/all
+CMakeFiles/displayAVI.dir/all:
+	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/depend
+	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=3,4 "Built target displayAVI"
+.PHONY : CMakeFiles/displayAVI.dir/all
 
 # Include target in all.
-all: CMakeFiles/sliderAVI.dir/all
+all: CMakeFiles/displayAVI.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/sliderAVI.dir/rule: cmake_check_build_system
+CMakeFiles/displayAVI.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sliderAVI.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/displayAVI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 0
-.PHONY : CMakeFiles/sliderAVI.dir/rule
+.PHONY : CMakeFiles/displayAVI.dir/rule
 
 # Convenience name for target.
-sliderAVI: CMakeFiles/sliderAVI.dir/rule
+displayAVI: CMakeFiles/displayAVI.dir/rule
 
-.PHONY : sliderAVI
-
-# clean rule for target.
-CMakeFiles/sliderAVI.dir/clean:
-	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/clean
-.PHONY : CMakeFiles/sliderAVI.dir/clean
+.PHONY : displayAVI
 
 # clean rule for target.
-clean: CMakeFiles/sliderAVI.dir/clean
+CMakeFiles/displayAVI.dir/clean:
+	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/clean
+.PHONY : CMakeFiles/displayAVI.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/displayAVI.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/smoothImage.dir
+# Target rules for target CMakeFiles/pipe.dir
 
 # All Build rule for target.
-CMakeFiles/smoothImage.dir/all:
-	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/depend
-	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=15,16 "Built target smoothImage"
-.PHONY : CMakeFiles/smoothImage.dir/all
+CMakeFiles/pipe.dir/all:
+	$(MAKE) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/depend
+	$(MAKE) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=5,6 "Built target pipe"
+.PHONY : CMakeFiles/pipe.dir/all
 
 # Include target in all.
-all: CMakeFiles/smoothImage.dir/all
+all: CMakeFiles/pipe.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/smoothImage.dir/rule: cmake_check_build_system
+CMakeFiles/pipe.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/smoothImage.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pipe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 0
-.PHONY : CMakeFiles/smoothImage.dir/rule
+.PHONY : CMakeFiles/pipe.dir/rule
 
 # Convenience name for target.
-smoothImage: CMakeFiles/smoothImage.dir/rule
+pipe: CMakeFiles/pipe.dir/rule
 
-.PHONY : smoothImage
-
-# clean rule for target.
-CMakeFiles/smoothImage.dir/clean:
-	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/clean
-.PHONY : CMakeFiles/smoothImage.dir/clean
+.PHONY : pipe
 
 # clean rule for target.
-clean: CMakeFiles/smoothImage.dir/clean
+CMakeFiles/pipe.dir/clean:
+	$(MAKE) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/clean
+.PHONY : CMakeFiles/pipe.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pipe.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/pyrdownImage.dir
+# Target rules for target CMakeFiles/pipe2.dir
 
 # All Build rule for target.
-CMakeFiles/pyrdownImage.dir/all:
-	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/depend
-	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=7,8 "Built target pyrdownImage"
-.PHONY : CMakeFiles/pyrdownImage.dir/all
+CMakeFiles/pipe2.dir/all:
+	$(MAKE) -f CMakeFiles/pipe2.dir/build.make CMakeFiles/pipe2.dir/depend
+	$(MAKE) -f CMakeFiles/pipe2.dir/build.make CMakeFiles/pipe2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=7,8 "Built target pipe2"
+.PHONY : CMakeFiles/pipe2.dir/all
 
 # Include target in all.
-all: CMakeFiles/pyrdownImage.dir/all
+all: CMakeFiles/pipe2.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/pyrdownImage.dir/rule: cmake_check_build_system
+CMakeFiles/pipe2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pyrdownImage.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pipe2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 0
-.PHONY : CMakeFiles/pyrdownImage.dir/rule
+.PHONY : CMakeFiles/pipe2.dir/rule
 
 # Convenience name for target.
-pyrdownImage: CMakeFiles/pyrdownImage.dir/rule
+pipe2: CMakeFiles/pipe2.dir/rule
 
-.PHONY : pyrdownImage
-
-# clean rule for target.
-CMakeFiles/pyrdownImage.dir/clean:
-	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/clean
-.PHONY : CMakeFiles/pyrdownImage.dir/clean
+.PHONY : pipe2
 
 # clean rule for target.
-clean: CMakeFiles/pyrdownImage.dir/clean
+CMakeFiles/pipe2.dir/clean:
+	$(MAKE) -f CMakeFiles/pipe2.dir/build.make CMakeFiles/pipe2.dir/clean
+.PHONY : CMakeFiles/pipe2.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pipe2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/showImage.dir
+
+# All Build rule for target.
+CMakeFiles/showImage.dir/all:
+	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/depend
+	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=11,12 "Built target showImage"
+.PHONY : CMakeFiles/showImage.dir/all
+
+# Include target in all.
+all: CMakeFiles/showImage.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/showImage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/showImage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 0
+.PHONY : CMakeFiles/showImage.dir/rule
+
+# Convenience name for target.
+showImage: CMakeFiles/showImage.dir/rule
+
+.PHONY : showImage
+
+# clean rule for target.
+CMakeFiles/showImage.dir/clean:
+	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/clean
+.PHONY : CMakeFiles/showImage.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/showImage.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/showImage2.dir
+
+# All Build rule for target.
+CMakeFiles/showImage2.dir/all:
+	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/depend
+	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/bin/CMakeFiles --progress-num=13,14 "Built target showImage2"
+.PHONY : CMakeFiles/showImage2.dir/all
+
+# Include target in all.
+all: CMakeFiles/showImage2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/showImage2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/showImage2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/bin/CMakeFiles 0
+.PHONY : CMakeFiles/showImage2.dir/rule
+
+# Convenience name for target.
+showImage2: CMakeFiles/showImage2.dir/rule
+
+.PHONY : showImage2
+
+# clean rule for target.
+CMakeFiles/showImage2.dir/clean:
+	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/clean
+.PHONY : CMakeFiles/showImage2.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/showImage2.dir/clean
 
 .PHONY : clean
 
