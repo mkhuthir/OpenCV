@@ -54,4 +54,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/pipe2.dir/DependInfo.cmake"
   "CMakeFiles/showImage.dir/DependInfo.cmake"
   "CMakeFiles/showImage2.dir/DependInfo.cmake"
+  "CMakeFiles/camera.dir/DependInfo.cmake"
   )
