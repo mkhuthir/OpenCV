@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named inimat
+
+# Build rule for target.
+inimat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 inimat
+.PHONY : inimat
+
+# fast build rule for target.
+inimat/fast:
+	$(MAKE) -f CMakeFiles/inimat.dir/build.make CMakeFiles/inimat.dir/build
+.PHONY : inimat/fast
+
+#=============================================================================
 # Target rules for targets named grayVideo
 
 # Build rule for target.
@@ -401,6 +414,33 @@ src/grayVideo.cpp.s:
 	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/src/grayVideo.cpp.s
 .PHONY : src/grayVideo.cpp.s
 
+src/inimat.o: src/inimat.cpp.o
+
+.PHONY : src/inimat.o
+
+# target to build an object file
+src/inimat.cpp.o:
+	$(MAKE) -f CMakeFiles/inimat.dir/build.make CMakeFiles/inimat.dir/src/inimat.cpp.o
+.PHONY : src/inimat.cpp.o
+
+src/inimat.i: src/inimat.cpp.i
+
+.PHONY : src/inimat.i
+
+# target to preprocess a source file
+src/inimat.cpp.i:
+	$(MAKE) -f CMakeFiles/inimat.dir/build.make CMakeFiles/inimat.dir/src/inimat.cpp.i
+.PHONY : src/inimat.cpp.i
+
+src/inimat.s: src/inimat.cpp.s
+
+.PHONY : src/inimat.s
+
+# target to generate assembly for a file
+src/inimat.cpp.s:
+	$(MAKE) -f CMakeFiles/inimat.dir/build.make CMakeFiles/inimat.dir/src/inimat.cpp.s
+.PHONY : src/inimat.cpp.s
+
 src/pipe.o: src/pipe.cpp.o
 
 .PHONY : src/pipe.o
@@ -597,6 +637,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... inimat"
 	@echo "... edit_cache"
 	@echo "... grayVideo"
 	@echo "... pyrdownImage"
@@ -625,6 +666,9 @@ help:
 	@echo "... src/grayVideo.o"
 	@echo "... src/grayVideo.i"
 	@echo "... src/grayVideo.s"
+	@echo "... src/inimat.o"
+	@echo "... src/inimat.i"
+	@echo "... src/inimat.s"
 	@echo "... src/pipe.o"
 	@echo "... src/pipe.i"
 	@echo "... src/pipe.s"

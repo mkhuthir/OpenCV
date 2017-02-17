@@ -1,4 +1,5 @@
 /home/mkhuthir/openCV/bin/CMakeFiles/rebuild_cache.dir
+/home/mkhuthir/openCV/bin/CMakeFiles/inimat.dir
 /home/mkhuthir/openCV/bin/CMakeFiles/edit_cache.dir
 /home/mkhuthir/openCV/bin/CMakeFiles/grayVideo.dir
 /home/mkhuthir/openCV/bin/CMakeFiles/pyrdownImage.dir

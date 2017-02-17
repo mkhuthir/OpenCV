@@ -45,6 +45,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/inimat.dir/DependInfo.cmake"
   "CMakeFiles/grayVideo.dir/DependInfo.cmake"
   "CMakeFiles/pyrdownImage.dir/DependInfo.cmake"
   "CMakeFiles/smoothImage.dir/DependInfo.cmake"

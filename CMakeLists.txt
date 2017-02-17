@@ -20,6 +20,7 @@ add_executable(showImage    src/showImage.cpp)
 add_executable(showImage2   src/showImage2.cpp)
 add_executable(camera       src/camera.cpp)
 add_executable(grayVideo    src/grayVideo.cpp)
+add_executable(inimat       src/inimat.cpp)
 add_executable(cvmat        src/cvmat.cpp)
 
 
@@ -34,4 +35,5 @@ target_link_libraries(showImage     ${OpenCV_LIBS})
 target_link_libraries(showImage2    ${OpenCV_LIBS})
 target_link_libraries(camera        ${OpenCV_LIBS})
 target_link_libraries(grayVideo     ${OpenCV_LIBS})
+target_link_libraries(inimat        ${OpenCV_LIBS})
 target_link_libraries(cvmat         ${OpenCV_LIBS})
