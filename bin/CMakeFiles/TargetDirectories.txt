@@ -4,6 +4,7 @@
 /home/mkhuthir/openCV/bin/CMakeFiles/pyrdownImage.dir
 /home/mkhuthir/openCV/bin/CMakeFiles/smoothImage.dir
 /home/mkhuthir/openCV/bin/CMakeFiles/sliderAVI.dir
+/home/mkhuthir/openCV/bin/CMakeFiles/cvmat.dir
 /home/mkhuthir/openCV/bin/CMakeFiles/canny.dir
 /home/mkhuthir/openCV/bin/CMakeFiles/displayAVI.dir
 /home/mkhuthir/openCV/bin/CMakeFiles/pipe.dir

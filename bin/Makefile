@@ -163,6 +163,19 @@ sliderAVI/fast:
 .PHONY : sliderAVI/fast
 
 #=============================================================================
+# Target rules for targets named cvmat
+
+# Build rule for target.
+cvmat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cvmat
+.PHONY : cvmat
+
+# fast build rule for target.
+cvmat/fast:
+	$(MAKE) -f CMakeFiles/cvmat.dir/build.make CMakeFiles/cvmat.dir/build
+.PHONY : cvmat/fast
+
+#=============================================================================
 # Target rules for targets named canny
 
 # Build rule for target.
@@ -306,6 +319,33 @@ src/canny.s: src/canny.cpp.s
 src/canny.cpp.s:
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/src/canny.cpp.s
 .PHONY : src/canny.cpp.s
+
+src/cvmat.o: src/cvmat.cpp.o
+
+.PHONY : src/cvmat.o
+
+# target to build an object file
+src/cvmat.cpp.o:
+	$(MAKE) -f CMakeFiles/cvmat.dir/build.make CMakeFiles/cvmat.dir/src/cvmat.cpp.o
+.PHONY : src/cvmat.cpp.o
+
+src/cvmat.i: src/cvmat.cpp.i
+
+.PHONY : src/cvmat.i
+
+# target to preprocess a source file
+src/cvmat.cpp.i:
+	$(MAKE) -f CMakeFiles/cvmat.dir/build.make CMakeFiles/cvmat.dir/src/cvmat.cpp.i
+.PHONY : src/cvmat.cpp.i
+
+src/cvmat.s: src/cvmat.cpp.s
+
+.PHONY : src/cvmat.s
+
+# target to generate assembly for a file
+src/cvmat.cpp.s:
+	$(MAKE) -f CMakeFiles/cvmat.dir/build.make CMakeFiles/cvmat.dir/src/cvmat.cpp.s
+.PHONY : src/cvmat.cpp.s
 
 src/displayAVI.o: src/displayAVI.cpp.o
 
@@ -562,6 +602,7 @@ help:
 	@echo "... pyrdownImage"
 	@echo "... smoothImage"
 	@echo "... sliderAVI"
+	@echo "... cvmat"
 	@echo "... canny"
 	@echo "... displayAVI"
 	@echo "... pipe"
@@ -575,6 +616,9 @@ help:
 	@echo "... src/canny.o"
 	@echo "... src/canny.i"
 	@echo "... src/canny.s"
+	@echo "... src/cvmat.o"
+	@echo "... src/cvmat.i"
+	@echo "... src/cvmat.s"
 	@echo "... src/displayAVI.o"
 	@echo "... src/displayAVI.i"
 	@echo "... src/displayAVI.s"
