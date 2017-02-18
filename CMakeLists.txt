@@ -25,6 +25,7 @@ add_executable(camera       src/camera.cpp)
 add_executable(grayVideo    src/grayVideo.cpp)
 add_executable(inimat       src/inimat.cpp)
 add_executable(cvmat        src/cvmat.cpp)
+add_executable(info         src/info.cpp)
 
 
 target_link_libraries(sliderAVI 	${OpenCV_LIBS})
@@ -40,3 +41,4 @@ target_link_libraries(camera        ${OpenCV_LIBS})
 target_link_libraries(grayVideo     ${OpenCV_LIBS})
 target_link_libraries(inimat        ${OpenCV_LIBS})
 target_link_libraries(cvmat         ${OpenCV_LIBS})
+target_link_libraries(info          ${OpenCV_LIBS})

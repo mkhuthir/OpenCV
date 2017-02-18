@@ -228,6 +228,19 @@ pipe/fast:
 .PHONY : pipe/fast
 
 #=============================================================================
+# Target rules for targets named info
+
+# Build rule for target.
+info: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 info
+.PHONY : info
+
+# fast build rule for target.
+info/fast:
+	$(MAKE) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/build
+.PHONY : info/fast
+
+#=============================================================================
 # Target rules for targets named pipe2
 
 # Build rule for target.
@@ -413,6 +426,33 @@ src/grayVideo.s: src/grayVideo.cpp.s
 src/grayVideo.cpp.s:
 	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/src/grayVideo.cpp.s
 .PHONY : src/grayVideo.cpp.s
+
+src/info.o: src/info.cpp.o
+
+.PHONY : src/info.o
+
+# target to build an object file
+src/info.cpp.o:
+	$(MAKE) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/src/info.cpp.o
+.PHONY : src/info.cpp.o
+
+src/info.i: src/info.cpp.i
+
+.PHONY : src/info.i
+
+# target to preprocess a source file
+src/info.cpp.i:
+	$(MAKE) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/src/info.cpp.i
+.PHONY : src/info.cpp.i
+
+src/info.s: src/info.cpp.s
+
+.PHONY : src/info.s
+
+# target to generate assembly for a file
+src/info.cpp.s:
+	$(MAKE) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/src/info.cpp.s
+.PHONY : src/info.cpp.s
 
 src/inimat.o: src/inimat.cpp.o
 
@@ -647,6 +687,7 @@ help:
 	@echo "... canny"
 	@echo "... displayAVI"
 	@echo "... pipe"
+	@echo "... info"
 	@echo "... pipe2"
 	@echo "... showImage"
 	@echo "... showImage2"
@@ -666,6 +707,9 @@ help:
 	@echo "... src/grayVideo.o"
 	@echo "... src/grayVideo.i"
 	@echo "... src/grayVideo.s"
+	@echo "... src/info.o"
+	@echo "... src/info.i"
+	@echo "... src/info.s"
 	@echo "... src/inimat.o"
 	@echo "... src/inimat.i"
 	@echo "... src/inimat.s"

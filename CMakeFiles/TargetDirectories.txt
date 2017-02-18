@@ -9,6 +9,7 @@
 /home/mkhuthir/openCV/CMakeFiles/canny.dir
 /home/mkhuthir/openCV/CMakeFiles/displayAVI.dir
 /home/mkhuthir/openCV/CMakeFiles/pipe.dir
+/home/mkhuthir/openCV/CMakeFiles/info.dir
 /home/mkhuthir/openCV/CMakeFiles/pipe2.dir
 /home/mkhuthir/openCV/CMakeFiles/showImage.dir
 /home/mkhuthir/openCV/CMakeFiles/showImage2.dir
