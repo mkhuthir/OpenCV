@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/mkhuthir/openCV
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,186 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named writexml
+# Target rules for targets named showImage2
 
 # Build rule for target.
-writexml: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 writexml
-.PHONY : writexml
+showImage2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 showImage2
+.PHONY : showImage2
 
 # fast build rule for target.
-writexml/fast:
-	$(MAKE) -f CMakeFiles/writexml.dir/build.make CMakeFiles/writexml.dir/build
-.PHONY : writexml/fast
-
-#=============================================================================
-# Target rules for targets named savemat
-
-# Build rule for target.
-savemat: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 savemat
-.PHONY : savemat
-
-# fast build rule for target.
-savemat/fast:
-	$(MAKE) -f CMakeFiles/savemat.dir/build.make CMakeFiles/savemat.dir/build
-.PHONY : savemat/fast
-
-#=============================================================================
-# Target rules for targets named inimat
-
-# Build rule for target.
-inimat: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 inimat
-.PHONY : inimat
-
-# fast build rule for target.
-inimat/fast:
-	$(MAKE) -f CMakeFiles/inimat.dir/build.make CMakeFiles/inimat.dir/build
-.PHONY : inimat/fast
-
-#=============================================================================
-# Target rules for targets named grayVideo
-
-# Build rule for target.
-grayVideo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 grayVideo
-.PHONY : grayVideo
-
-# fast build rule for target.
-grayVideo/fast:
-	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/build
-.PHONY : grayVideo/fast
-
-#=============================================================================
-# Target rules for targets named pyrdownImage
-
-# Build rule for target.
-pyrdownImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pyrdownImage
-.PHONY : pyrdownImage
-
-# fast build rule for target.
-pyrdownImage/fast:
-	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/build
-.PHONY : pyrdownImage/fast
-
-#=============================================================================
-# Target rules for targets named smoothImage
-
-# Build rule for target.
-smoothImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 smoothImage
-.PHONY : smoothImage
-
-# fast build rule for target.
-smoothImage/fast:
-	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/build
-.PHONY : smoothImage/fast
-
-#=============================================================================
-# Target rules for targets named sliderAVI
-
-# Build rule for target.
-sliderAVI: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sliderAVI
-.PHONY : sliderAVI
-
-# fast build rule for target.
-sliderAVI/fast:
-	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/build
-.PHONY : sliderAVI/fast
-
-#=============================================================================
-# Target rules for targets named cvmat
-
-# Build rule for target.
-cvmat: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cvmat
-.PHONY : cvmat
-
-# fast build rule for target.
-cvmat/fast:
-	$(MAKE) -f CMakeFiles/cvmat.dir/build.make CMakeFiles/cvmat.dir/build
-.PHONY : cvmat/fast
-
-#=============================================================================
-# Target rules for targets named canny
-
-# Build rule for target.
-canny: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 canny
-.PHONY : canny
-
-# fast build rule for target.
-canny/fast:
-	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
-.PHONY : canny/fast
-
-#=============================================================================
-# Target rules for targets named readxml
-
-# Build rule for target.
-readxml: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 readxml
-.PHONY : readxml
-
-# fast build rule for target.
-readxml/fast:
-	$(MAKE) -f CMakeFiles/readxml.dir/build.make CMakeFiles/readxml.dir/build
-.PHONY : readxml/fast
-
-#=============================================================================
-# Target rules for targets named displayAVI
-
-# Build rule for target.
-displayAVI: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 displayAVI
-.PHONY : displayAVI
-
-# fast build rule for target.
-displayAVI/fast:
-	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/build
-.PHONY : displayAVI/fast
-
-#=============================================================================
-# Target rules for targets named pipe
-
-# Build rule for target.
-pipe: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pipe
-.PHONY : pipe
-
-# fast build rule for target.
-pipe/fast:
-	$(MAKE) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/build
-.PHONY : pipe/fast
-
-#=============================================================================
-# Target rules for targets named info
-
-# Build rule for target.
-info: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 info
-.PHONY : info
-
-# fast build rule for target.
-info/fast:
-	$(MAKE) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/build
-.PHONY : info/fast
-
-#=============================================================================
-# Target rules for targets named pipe2
-
-# Build rule for target.
-pipe2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pipe2
-.PHONY : pipe2
-
-# fast build rule for target.
-pipe2/fast:
-	$(MAKE) -f CMakeFiles/pipe2.dir/build.make CMakeFiles/pipe2.dir/build
-.PHONY : pipe2/fast
+showImage2/fast:
+	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/build
+.PHONY : showImage2/fast
 
 #=============================================================================
 # Target rules for targets named matsum
@@ -306,30 +137,56 @@ matsum/fast:
 .PHONY : matsum/fast
 
 #=============================================================================
-# Target rules for targets named showImage
+# Target rules for targets named pipe2
 
 # Build rule for target.
-showImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 showImage
-.PHONY : showImage
+pipe2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pipe2
+.PHONY : pipe2
 
 # fast build rule for target.
-showImage/fast:
-	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/build
-.PHONY : showImage/fast
+pipe2/fast:
+	$(MAKE) -f CMakeFiles/pipe2.dir/build.make CMakeFiles/pipe2.dir/build
+.PHONY : pipe2/fast
 
 #=============================================================================
-# Target rules for targets named showImage2
+# Target rules for targets named saturate
 
 # Build rule for target.
-showImage2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 showImage2
-.PHONY : showImage2
+saturate: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 saturate
+.PHONY : saturate
 
 # fast build rule for target.
-showImage2/fast:
-	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/build
-.PHONY : showImage2/fast
+saturate/fast:
+	$(MAKE) -f CMakeFiles/saturate.dir/build.make CMakeFiles/saturate.dir/build
+.PHONY : saturate/fast
+
+#=============================================================================
+# Target rules for targets named pipe
+
+# Build rule for target.
+pipe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pipe
+.PHONY : pipe
+
+# fast build rule for target.
+pipe/fast:
+	$(MAKE) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/build
+.PHONY : pipe/fast
+
+#=============================================================================
+# Target rules for targets named roi
+
+# Build rule for target.
+roi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roi
+.PHONY : roi
+
+# fast build rule for target.
+roi/fast:
+	$(MAKE) -f CMakeFiles/roi.dir/build.make CMakeFiles/roi.dir/build
+.PHONY : roi/fast
 
 #=============================================================================
 # Target rules for targets named camera
@@ -343,6 +200,201 @@ camera: cmake_check_build_system
 camera/fast:
 	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/build
 .PHONY : camera/fast
+
+#=============================================================================
+# Target rules for targets named displayAVI
+
+# Build rule for target.
+displayAVI: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 displayAVI
+.PHONY : displayAVI
+
+# fast build rule for target.
+displayAVI/fast:
+	$(MAKE) -f CMakeFiles/displayAVI.dir/build.make CMakeFiles/displayAVI.dir/build
+.PHONY : displayAVI/fast
+
+#=============================================================================
+# Target rules for targets named readxml
+
+# Build rule for target.
+readxml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 readxml
+.PHONY : readxml
+
+# fast build rule for target.
+readxml/fast:
+	$(MAKE) -f CMakeFiles/readxml.dir/build.make CMakeFiles/readxml.dir/build
+.PHONY : readxml/fast
+
+#=============================================================================
+# Target rules for targets named canny
+
+# Build rule for target.
+canny: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 canny
+.PHONY : canny
+
+# fast build rule for target.
+canny/fast:
+	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
+.PHONY : canny/fast
+
+#=============================================================================
+# Target rules for targets named cvmat
+
+# Build rule for target.
+cvmat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cvmat
+.PHONY : cvmat
+
+# fast build rule for target.
+cvmat/fast:
+	$(MAKE) -f CMakeFiles/cvmat.dir/build.make CMakeFiles/cvmat.dir/build
+.PHONY : cvmat/fast
+
+#=============================================================================
+# Target rules for targets named smoothImage
+
+# Build rule for target.
+smoothImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 smoothImage
+.PHONY : smoothImage
+
+# fast build rule for target.
+smoothImage/fast:
+	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/build
+.PHONY : smoothImage/fast
+
+#=============================================================================
+# Target rules for targets named pyrdownImage
+
+# Build rule for target.
+pyrdownImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pyrdownImage
+.PHONY : pyrdownImage
+
+# fast build rule for target.
+pyrdownImage/fast:
+	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/build
+.PHONY : pyrdownImage/fast
+
+#=============================================================================
+# Target rules for targets named showImage
+
+# Build rule for target.
+showImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 showImage
+.PHONY : showImage
+
+# fast build rule for target.
+showImage/fast:
+	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/build
+.PHONY : showImage/fast
+
+#=============================================================================
+# Target rules for targets named grayVideo
+
+# Build rule for target.
+grayVideo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 grayVideo
+.PHONY : grayVideo
+
+# fast build rule for target.
+grayVideo/fast:
+	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/build
+.PHONY : grayVideo/fast
+
+#=============================================================================
+# Target rules for targets named roi3
+
+# Build rule for target.
+roi3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roi3
+.PHONY : roi3
+
+# fast build rule for target.
+roi3/fast:
+	$(MAKE) -f CMakeFiles/roi3.dir/build.make CMakeFiles/roi3.dir/build
+.PHONY : roi3/fast
+
+#=============================================================================
+# Target rules for targets named inimat
+
+# Build rule for target.
+inimat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 inimat
+.PHONY : inimat
+
+# fast build rule for target.
+inimat/fast:
+	$(MAKE) -f CMakeFiles/inimat.dir/build.make CMakeFiles/inimat.dir/build
+.PHONY : inimat/fast
+
+#=============================================================================
+# Target rules for targets named info
+
+# Build rule for target.
+info: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 info
+.PHONY : info
+
+# fast build rule for target.
+info/fast:
+	$(MAKE) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/build
+.PHONY : info/fast
+
+#=============================================================================
+# Target rules for targets named sliderAVI
+
+# Build rule for target.
+sliderAVI: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sliderAVI
+.PHONY : sliderAVI
+
+# fast build rule for target.
+sliderAVI/fast:
+	$(MAKE) -f CMakeFiles/sliderAVI.dir/build.make CMakeFiles/sliderAVI.dir/build
+.PHONY : sliderAVI/fast
+
+#=============================================================================
+# Target rules for targets named savemat
+
+# Build rule for target.
+savemat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 savemat
+.PHONY : savemat
+
+# fast build rule for target.
+savemat/fast:
+	$(MAKE) -f CMakeFiles/savemat.dir/build.make CMakeFiles/savemat.dir/build
+.PHONY : savemat/fast
+
+#=============================================================================
+# Target rules for targets named writexml
+
+# Build rule for target.
+writexml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 writexml
+.PHONY : writexml
+
+# fast build rule for target.
+writexml/fast:
+	$(MAKE) -f CMakeFiles/writexml.dir/build.make CMakeFiles/writexml.dir/build
+.PHONY : writexml/fast
+
+#=============================================================================
+# Target rules for targets named roi2
+
+# Build rule for target.
+roi2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roi2
+.PHONY : roi2
+
+# fast build rule for target.
+roi2/fast:
+	$(MAKE) -f CMakeFiles/roi2.dir/build.make CMakeFiles/roi2.dir/build
+.PHONY : roi2/fast
 
 src/camera.o: src/camera.cpp.o
 
@@ -668,6 +720,66 @@ src/readxml.cpp.s:
 	$(MAKE) -f CMakeFiles/readxml.dir/build.make CMakeFiles/readxml.dir/src/readxml.cpp.s
 .PHONY : src/readxml.cpp.s
 
+src/roi.o: src/roi.cpp.o
+
+.PHONY : src/roi.o
+
+# target to build an object file
+src/roi.cpp.o:
+	$(MAKE) -f CMakeFiles/roi.dir/build.make CMakeFiles/roi.dir/src/roi.cpp.o
+	$(MAKE) -f CMakeFiles/roi3.dir/build.make CMakeFiles/roi3.dir/src/roi.cpp.o
+	$(MAKE) -f CMakeFiles/roi2.dir/build.make CMakeFiles/roi2.dir/src/roi.cpp.o
+.PHONY : src/roi.cpp.o
+
+src/roi.i: src/roi.cpp.i
+
+.PHONY : src/roi.i
+
+# target to preprocess a source file
+src/roi.cpp.i:
+	$(MAKE) -f CMakeFiles/roi.dir/build.make CMakeFiles/roi.dir/src/roi.cpp.i
+	$(MAKE) -f CMakeFiles/roi3.dir/build.make CMakeFiles/roi3.dir/src/roi.cpp.i
+	$(MAKE) -f CMakeFiles/roi2.dir/build.make CMakeFiles/roi2.dir/src/roi.cpp.i
+.PHONY : src/roi.cpp.i
+
+src/roi.s: src/roi.cpp.s
+
+.PHONY : src/roi.s
+
+# target to generate assembly for a file
+src/roi.cpp.s:
+	$(MAKE) -f CMakeFiles/roi.dir/build.make CMakeFiles/roi.dir/src/roi.cpp.s
+	$(MAKE) -f CMakeFiles/roi3.dir/build.make CMakeFiles/roi3.dir/src/roi.cpp.s
+	$(MAKE) -f CMakeFiles/roi2.dir/build.make CMakeFiles/roi2.dir/src/roi.cpp.s
+.PHONY : src/roi.cpp.s
+
+src/saturate.o: src/saturate.cpp.o
+
+.PHONY : src/saturate.o
+
+# target to build an object file
+src/saturate.cpp.o:
+	$(MAKE) -f CMakeFiles/saturate.dir/build.make CMakeFiles/saturate.dir/src/saturate.cpp.o
+.PHONY : src/saturate.cpp.o
+
+src/saturate.i: src/saturate.cpp.i
+
+.PHONY : src/saturate.i
+
+# target to preprocess a source file
+src/saturate.cpp.i:
+	$(MAKE) -f CMakeFiles/saturate.dir/build.make CMakeFiles/saturate.dir/src/saturate.cpp.i
+.PHONY : src/saturate.cpp.i
+
+src/saturate.s: src/saturate.cpp.s
+
+.PHONY : src/saturate.s
+
+# target to generate assembly for a file
+src/saturate.cpp.s:
+	$(MAKE) -f CMakeFiles/saturate.dir/build.make CMakeFiles/saturate.dir/src/saturate.cpp.s
+.PHONY : src/saturate.cpp.s
+
 src/savemat.o: src/savemat.cpp.o
 
 .PHONY : src/savemat.o
@@ -836,26 +948,30 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... writexml"
-	@echo "... savemat"
-	@echo "... inimat"
 	@echo "... edit_cache"
-	@echo "... grayVideo"
-	@echo "... pyrdownImage"
-	@echo "... smoothImage"
-	@echo "... sliderAVI"
-	@echo "... cvmat"
-	@echo "... canny"
-	@echo "... readxml"
-	@echo "... displayAVI"
-	@echo "... pipe"
-	@echo "... info"
-	@echo "... pipe2"
-	@echo "... matsum"
-	@echo "... showImage"
+	@echo "... rebuild_cache"
 	@echo "... showImage2"
+	@echo "... matsum"
+	@echo "... pipe2"
+	@echo "... saturate"
+	@echo "... pipe"
+	@echo "... roi"
 	@echo "... camera"
+	@echo "... displayAVI"
+	@echo "... readxml"
+	@echo "... canny"
+	@echo "... cvmat"
+	@echo "... smoothImage"
+	@echo "... pyrdownImage"
+	@echo "... showImage"
+	@echo "... grayVideo"
+	@echo "... roi3"
+	@echo "... inimat"
+	@echo "... info"
+	@echo "... sliderAVI"
+	@echo "... savemat"
+	@echo "... writexml"
+	@echo "... roi2"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
@@ -892,6 +1008,12 @@ help:
 	@echo "... src/readxml.o"
 	@echo "... src/readxml.i"
 	@echo "... src/readxml.s"
+	@echo "... src/roi.o"
+	@echo "... src/roi.i"
+	@echo "... src/roi.s"
+	@echo "... src/saturate.o"
+	@echo "... src/saturate.i"
+	@echo "... src/saturate.s"
 	@echo "... src/savemat.o"
 	@echo "... src/savemat.i"
 	@echo "... src/savemat.s"

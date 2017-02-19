@@ -1,7 +1,9 @@
 
 #include <cv.h>
 #include <highgui.h>
-// ch3_ex3_12 image_name x y width height add# 
+//  ./roi image_name x y width height add#
+// ./bin/roi dat/stuff.jpg 50 100 300 200 100
+
 int main(int argc, char** argv)
 {
 
