@@ -1,4 +1,6 @@
 /home/mkhuthir/openCV/CMakeFiles/rebuild_cache.dir
+/home/mkhuthir/openCV/CMakeFiles/writexml.dir
+/home/mkhuthir/openCV/CMakeFiles/savemat.dir
 /home/mkhuthir/openCV/CMakeFiles/inimat.dir
 /home/mkhuthir/openCV/CMakeFiles/edit_cache.dir
 /home/mkhuthir/openCV/CMakeFiles/grayVideo.dir
@@ -7,10 +9,12 @@
 /home/mkhuthir/openCV/CMakeFiles/sliderAVI.dir
 /home/mkhuthir/openCV/CMakeFiles/cvmat.dir
 /home/mkhuthir/openCV/CMakeFiles/canny.dir
+/home/mkhuthir/openCV/CMakeFiles/readxml.dir
 /home/mkhuthir/openCV/CMakeFiles/displayAVI.dir
 /home/mkhuthir/openCV/CMakeFiles/pipe.dir
 /home/mkhuthir/openCV/CMakeFiles/info.dir
 /home/mkhuthir/openCV/CMakeFiles/pipe2.dir
+/home/mkhuthir/openCV/CMakeFiles/matsum.dir
 /home/mkhuthir/openCV/CMakeFiles/showImage.dir
 /home/mkhuthir/openCV/CMakeFiles/showImage2.dir
 /home/mkhuthir/openCV/CMakeFiles/camera.dir

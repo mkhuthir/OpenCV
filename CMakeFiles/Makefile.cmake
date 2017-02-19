@@ -45,6 +45,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/writexml.dir/DependInfo.cmake"
+  "CMakeFiles/savemat.dir/DependInfo.cmake"
   "CMakeFiles/inimat.dir/DependInfo.cmake"
   "CMakeFiles/grayVideo.dir/DependInfo.cmake"
   "CMakeFiles/pyrdownImage.dir/DependInfo.cmake"
@@ -52,10 +54,12 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/sliderAVI.dir/DependInfo.cmake"
   "CMakeFiles/cvmat.dir/DependInfo.cmake"
   "CMakeFiles/canny.dir/DependInfo.cmake"
+  "CMakeFiles/readxml.dir/DependInfo.cmake"
   "CMakeFiles/displayAVI.dir/DependInfo.cmake"
   "CMakeFiles/pipe.dir/DependInfo.cmake"
   "CMakeFiles/info.dir/DependInfo.cmake"
   "CMakeFiles/pipe2.dir/DependInfo.cmake"
+  "CMakeFiles/matsum.dir/DependInfo.cmake"
   "CMakeFiles/showImage.dir/DependInfo.cmake"
   "CMakeFiles/showImage2.dir/DependInfo.cmake"
   "CMakeFiles/camera.dir/DependInfo.cmake"

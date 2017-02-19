@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named writexml
+
+# Build rule for target.
+writexml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 writexml
+.PHONY : writexml
+
+# fast build rule for target.
+writexml/fast:
+	$(MAKE) -f CMakeFiles/writexml.dir/build.make CMakeFiles/writexml.dir/build
+.PHONY : writexml/fast
+
+#=============================================================================
+# Target rules for targets named savemat
+
+# Build rule for target.
+savemat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 savemat
+.PHONY : savemat
+
+# fast build rule for target.
+savemat/fast:
+	$(MAKE) -f CMakeFiles/savemat.dir/build.make CMakeFiles/savemat.dir/build
+.PHONY : savemat/fast
+
+#=============================================================================
 # Target rules for targets named inimat
 
 # Build rule for target.
@@ -202,6 +228,19 @@ canny/fast:
 .PHONY : canny/fast
 
 #=============================================================================
+# Target rules for targets named readxml
+
+# Build rule for target.
+readxml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 readxml
+.PHONY : readxml
+
+# fast build rule for target.
+readxml/fast:
+	$(MAKE) -f CMakeFiles/readxml.dir/build.make CMakeFiles/readxml.dir/build
+.PHONY : readxml/fast
+
+#=============================================================================
 # Target rules for targets named displayAVI
 
 # Build rule for target.
@@ -252,6 +291,19 @@ pipe2: cmake_check_build_system
 pipe2/fast:
 	$(MAKE) -f CMakeFiles/pipe2.dir/build.make CMakeFiles/pipe2.dir/build
 .PHONY : pipe2/fast
+
+#=============================================================================
+# Target rules for targets named matsum
+
+# Build rule for target.
+matsum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matsum
+.PHONY : matsum
+
+# fast build rule for target.
+matsum/fast:
+	$(MAKE) -f CMakeFiles/matsum.dir/build.make CMakeFiles/matsum.dir/build
+.PHONY : matsum/fast
 
 #=============================================================================
 # Target rules for targets named showImage
@@ -481,6 +533,33 @@ src/inimat.cpp.s:
 	$(MAKE) -f CMakeFiles/inimat.dir/build.make CMakeFiles/inimat.dir/src/inimat.cpp.s
 .PHONY : src/inimat.cpp.s
 
+src/matsum.o: src/matsum.cpp.o
+
+.PHONY : src/matsum.o
+
+# target to build an object file
+src/matsum.cpp.o:
+	$(MAKE) -f CMakeFiles/matsum.dir/build.make CMakeFiles/matsum.dir/src/matsum.cpp.o
+.PHONY : src/matsum.cpp.o
+
+src/matsum.i: src/matsum.cpp.i
+
+.PHONY : src/matsum.i
+
+# target to preprocess a source file
+src/matsum.cpp.i:
+	$(MAKE) -f CMakeFiles/matsum.dir/build.make CMakeFiles/matsum.dir/src/matsum.cpp.i
+.PHONY : src/matsum.cpp.i
+
+src/matsum.s: src/matsum.cpp.s
+
+.PHONY : src/matsum.s
+
+# target to generate assembly for a file
+src/matsum.cpp.s:
+	$(MAKE) -f CMakeFiles/matsum.dir/build.make CMakeFiles/matsum.dir/src/matsum.cpp.s
+.PHONY : src/matsum.cpp.s
+
 src/pipe.o: src/pipe.cpp.o
 
 .PHONY : src/pipe.o
@@ -561,6 +640,60 @@ src/pyrdownImage.s: src/pyrdownImage.cpp.s
 src/pyrdownImage.cpp.s:
 	$(MAKE) -f CMakeFiles/pyrdownImage.dir/build.make CMakeFiles/pyrdownImage.dir/src/pyrdownImage.cpp.s
 .PHONY : src/pyrdownImage.cpp.s
+
+src/readxml.o: src/readxml.cpp.o
+
+.PHONY : src/readxml.o
+
+# target to build an object file
+src/readxml.cpp.o:
+	$(MAKE) -f CMakeFiles/readxml.dir/build.make CMakeFiles/readxml.dir/src/readxml.cpp.o
+.PHONY : src/readxml.cpp.o
+
+src/readxml.i: src/readxml.cpp.i
+
+.PHONY : src/readxml.i
+
+# target to preprocess a source file
+src/readxml.cpp.i:
+	$(MAKE) -f CMakeFiles/readxml.dir/build.make CMakeFiles/readxml.dir/src/readxml.cpp.i
+.PHONY : src/readxml.cpp.i
+
+src/readxml.s: src/readxml.cpp.s
+
+.PHONY : src/readxml.s
+
+# target to generate assembly for a file
+src/readxml.cpp.s:
+	$(MAKE) -f CMakeFiles/readxml.dir/build.make CMakeFiles/readxml.dir/src/readxml.cpp.s
+.PHONY : src/readxml.cpp.s
+
+src/savemat.o: src/savemat.cpp.o
+
+.PHONY : src/savemat.o
+
+# target to build an object file
+src/savemat.cpp.o:
+	$(MAKE) -f CMakeFiles/savemat.dir/build.make CMakeFiles/savemat.dir/src/savemat.cpp.o
+.PHONY : src/savemat.cpp.o
+
+src/savemat.i: src/savemat.cpp.i
+
+.PHONY : src/savemat.i
+
+# target to preprocess a source file
+src/savemat.cpp.i:
+	$(MAKE) -f CMakeFiles/savemat.dir/build.make CMakeFiles/savemat.dir/src/savemat.cpp.i
+.PHONY : src/savemat.cpp.i
+
+src/savemat.s: src/savemat.cpp.s
+
+.PHONY : src/savemat.s
+
+# target to generate assembly for a file
+src/savemat.cpp.s:
+	$(MAKE) -f CMakeFiles/savemat.dir/build.make CMakeFiles/savemat.dir/src/savemat.cpp.s
+.PHONY : src/savemat.cpp.s
 
 src/showImage.o: src/showImage.cpp.o
 
@@ -670,6 +803,33 @@ src/smoothImage.cpp.s:
 	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/src/smoothImage.cpp.s
 .PHONY : src/smoothImage.cpp.s
 
+src/writexml.o: src/writexml.cpp.o
+
+.PHONY : src/writexml.o
+
+# target to build an object file
+src/writexml.cpp.o:
+	$(MAKE) -f CMakeFiles/writexml.dir/build.make CMakeFiles/writexml.dir/src/writexml.cpp.o
+.PHONY : src/writexml.cpp.o
+
+src/writexml.i: src/writexml.cpp.i
+
+.PHONY : src/writexml.i
+
+# target to preprocess a source file
+src/writexml.cpp.i:
+	$(MAKE) -f CMakeFiles/writexml.dir/build.make CMakeFiles/writexml.dir/src/writexml.cpp.i
+.PHONY : src/writexml.cpp.i
+
+src/writexml.s: src/writexml.cpp.s
+
+.PHONY : src/writexml.s
+
+# target to generate assembly for a file
+src/writexml.cpp.s:
+	$(MAKE) -f CMakeFiles/writexml.dir/build.make CMakeFiles/writexml.dir/src/writexml.cpp.s
+.PHONY : src/writexml.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -677,6 +837,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... writexml"
+	@echo "... savemat"
 	@echo "... inimat"
 	@echo "... edit_cache"
 	@echo "... grayVideo"
@@ -685,10 +847,12 @@ help:
 	@echo "... sliderAVI"
 	@echo "... cvmat"
 	@echo "... canny"
+	@echo "... readxml"
 	@echo "... displayAVI"
 	@echo "... pipe"
 	@echo "... info"
 	@echo "... pipe2"
+	@echo "... matsum"
 	@echo "... showImage"
 	@echo "... showImage2"
 	@echo "... camera"
@@ -713,6 +877,9 @@ help:
 	@echo "... src/inimat.o"
 	@echo "... src/inimat.i"
 	@echo "... src/inimat.s"
+	@echo "... src/matsum.o"
+	@echo "... src/matsum.i"
+	@echo "... src/matsum.s"
 	@echo "... src/pipe.o"
 	@echo "... src/pipe.i"
 	@echo "... src/pipe.s"
@@ -722,6 +889,12 @@ help:
 	@echo "... src/pyrdownImage.o"
 	@echo "... src/pyrdownImage.i"
 	@echo "... src/pyrdownImage.s"
+	@echo "... src/readxml.o"
+	@echo "... src/readxml.i"
+	@echo "... src/readxml.s"
+	@echo "... src/savemat.o"
+	@echo "... src/savemat.i"
+	@echo "... src/savemat.s"
 	@echo "... src/showImage.o"
 	@echo "... src/showImage.i"
 	@echo "... src/showImage.s"
@@ -734,6 +907,9 @@ help:
 	@echo "... src/smoothImage.o"
 	@echo "... src/smoothImage.i"
 	@echo "... src/smoothImage.s"
+	@echo "... src/writexml.o"
+	@echo "... src/writexml.i"
+	@echo "... src/writexml.s"
 .PHONY : help
 
 
