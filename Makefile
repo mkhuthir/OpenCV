@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named switch
+
+# Build rule for target.
+switch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 switch
+.PHONY : switch
+
+# fast build rule for target.
+switch/fast:
+	$(MAKE) -f CMakeFiles/switch.dir/build.make CMakeFiles/switch.dir/build
+.PHONY : switch/fast
+
+#=============================================================================
+# Target rules for targets named mouse
+
+# Build rule for target.
+mouse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mouse
+.PHONY : mouse
+
+# fast build rule for target.
+mouse/fast:
+	$(MAKE) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/build
+.PHONY : mouse/fast
+
+#=============================================================================
+# Target rules for targets named capprop
+
+# Build rule for target.
+capprop: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 capprop
+.PHONY : capprop
+
+# fast build rule for target.
+capprop/fast:
+	$(MAKE) -f CMakeFiles/capprop.dir/build.make CMakeFiles/capprop.dir/build
+.PHONY : capprop/fast
+
+#=============================================================================
 # Target rules for targets named showImage2
 
 # Build rule for target.
@@ -450,6 +489,33 @@ src/canny.cpp.s:
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/src/canny.cpp.s
 .PHONY : src/canny.cpp.s
 
+src/capprop.o: src/capprop.cpp.o
+
+.PHONY : src/capprop.o
+
+# target to build an object file
+src/capprop.cpp.o:
+	$(MAKE) -f CMakeFiles/capprop.dir/build.make CMakeFiles/capprop.dir/src/capprop.cpp.o
+.PHONY : src/capprop.cpp.o
+
+src/capprop.i: src/capprop.cpp.i
+
+.PHONY : src/capprop.i
+
+# target to preprocess a source file
+src/capprop.cpp.i:
+	$(MAKE) -f CMakeFiles/capprop.dir/build.make CMakeFiles/capprop.dir/src/capprop.cpp.i
+.PHONY : src/capprop.cpp.i
+
+src/capprop.s: src/capprop.cpp.s
+
+.PHONY : src/capprop.s
+
+# target to generate assembly for a file
+src/capprop.cpp.s:
+	$(MAKE) -f CMakeFiles/capprop.dir/build.make CMakeFiles/capprop.dir/src/capprop.cpp.s
+.PHONY : src/capprop.cpp.s
+
 src/cvmat.o: src/cvmat.cpp.o
 
 .PHONY : src/cvmat.o
@@ -611,6 +677,33 @@ src/matsum.s: src/matsum.cpp.s
 src/matsum.cpp.s:
 	$(MAKE) -f CMakeFiles/matsum.dir/build.make CMakeFiles/matsum.dir/src/matsum.cpp.s
 .PHONY : src/matsum.cpp.s
+
+src/mouse.o: src/mouse.cpp.o
+
+.PHONY : src/mouse.o
+
+# target to build an object file
+src/mouse.cpp.o:
+	$(MAKE) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/src/mouse.cpp.o
+.PHONY : src/mouse.cpp.o
+
+src/mouse.i: src/mouse.cpp.i
+
+.PHONY : src/mouse.i
+
+# target to preprocess a source file
+src/mouse.cpp.i:
+	$(MAKE) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/src/mouse.cpp.i
+.PHONY : src/mouse.cpp.i
+
+src/mouse.s: src/mouse.cpp.s
+
+.PHONY : src/mouse.s
+
+# target to generate assembly for a file
+src/mouse.cpp.s:
+	$(MAKE) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/src/mouse.cpp.s
+.PHONY : src/mouse.cpp.s
 
 src/pipe.o: src/pipe.cpp.o
 
@@ -915,6 +1008,33 @@ src/smoothImage.cpp.s:
 	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/src/smoothImage.cpp.s
 .PHONY : src/smoothImage.cpp.s
 
+src/switch.o: src/switch.cpp.o
+
+.PHONY : src/switch.o
+
+# target to build an object file
+src/switch.cpp.o:
+	$(MAKE) -f CMakeFiles/switch.dir/build.make CMakeFiles/switch.dir/src/switch.cpp.o
+.PHONY : src/switch.cpp.o
+
+src/switch.i: src/switch.cpp.i
+
+.PHONY : src/switch.i
+
+# target to preprocess a source file
+src/switch.cpp.i:
+	$(MAKE) -f CMakeFiles/switch.dir/build.make CMakeFiles/switch.dir/src/switch.cpp.i
+.PHONY : src/switch.cpp.i
+
+src/switch.s: src/switch.cpp.s
+
+.PHONY : src/switch.s
+
+# target to generate assembly for a file
+src/switch.cpp.s:
+	$(MAKE) -f CMakeFiles/switch.dir/build.make CMakeFiles/switch.dir/src/switch.cpp.s
+.PHONY : src/switch.cpp.s
+
 src/writexml.o: src/writexml.cpp.o
 
 .PHONY : src/writexml.o
@@ -950,6 +1070,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... switch"
+	@echo "... mouse"
+	@echo "... capprop"
 	@echo "... showImage2"
 	@echo "... matsum"
 	@echo "... pipe2"
@@ -978,6 +1101,9 @@ help:
 	@echo "... src/canny.o"
 	@echo "... src/canny.i"
 	@echo "... src/canny.s"
+	@echo "... src/capprop.o"
+	@echo "... src/capprop.i"
+	@echo "... src/capprop.s"
 	@echo "... src/cvmat.o"
 	@echo "... src/cvmat.i"
 	@echo "... src/cvmat.s"
@@ -996,6 +1122,9 @@ help:
 	@echo "... src/matsum.o"
 	@echo "... src/matsum.i"
 	@echo "... src/matsum.s"
+	@echo "... src/mouse.o"
+	@echo "... src/mouse.i"
+	@echo "... src/mouse.s"
 	@echo "... src/pipe.o"
 	@echo "... src/pipe.i"
 	@echo "... src/pipe.s"
@@ -1029,6 +1158,9 @@ help:
 	@echo "... src/smoothImage.o"
 	@echo "... src/smoothImage.i"
 	@echo "... src/smoothImage.s"
+	@echo "... src/switch.o"
+	@echo "... src/switch.i"
+	@echo "... src/switch.s"
 	@echo "... src/writexml.o"
 	@echo "... src/writexml.i"
 	@echo "... src/writexml.s"

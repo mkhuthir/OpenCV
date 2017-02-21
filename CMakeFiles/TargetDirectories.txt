@@ -1,5 +1,8 @@
 /home/mkhuthir/openCV/CMakeFiles/edit_cache.dir
 /home/mkhuthir/openCV/CMakeFiles/rebuild_cache.dir
+/home/mkhuthir/openCV/CMakeFiles/switch.dir
+/home/mkhuthir/openCV/CMakeFiles/mouse.dir
+/home/mkhuthir/openCV/CMakeFiles/capprop.dir
 /home/mkhuthir/openCV/CMakeFiles/showImage2.dir
 /home/mkhuthir/openCV/CMakeFiles/matsum.dir
 /home/mkhuthir/openCV/CMakeFiles/pipe2.dir

@@ -45,6 +45,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/switch.dir/DependInfo.cmake"
+  "CMakeFiles/mouse.dir/DependInfo.cmake"
+  "CMakeFiles/capprop.dir/DependInfo.cmake"
   "CMakeFiles/showImage2.dir/DependInfo.cmake"
   "CMakeFiles/matsum.dir/DependInfo.cmake"
   "CMakeFiles/pipe2.dir/DependInfo.cmake"
