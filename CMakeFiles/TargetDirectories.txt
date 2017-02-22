@@ -1,5 +1,7 @@
 /home/mkhuthir/openCV/CMakeFiles/edit_cache.dir
 /home/mkhuthir/openCV/CMakeFiles/rebuild_cache.dir
+/home/mkhuthir/openCV/CMakeFiles/splitrgb.dir
+/home/mkhuthir/openCV/CMakeFiles/sumrgb.dir
 /home/mkhuthir/openCV/CMakeFiles/switch.dir
 /home/mkhuthir/openCV/CMakeFiles/roi3.dir
 /home/mkhuthir/openCV/CMakeFiles/grayVideo.dir

@@ -48,6 +48,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/splitrgb.dir/DependInfo.cmake"
+  "CMakeFiles/sumrgb.dir/DependInfo.cmake"
   "CMakeFiles/switch.dir/DependInfo.cmake"
   "CMakeFiles/roi3.dir/DependInfo.cmake"
   "CMakeFiles/grayVideo.dir/DependInfo.cmake"

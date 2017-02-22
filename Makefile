@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named splitrgb
+
+# Build rule for target.
+splitrgb: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 splitrgb
+.PHONY : splitrgb
+
+# fast build rule for target.
+splitrgb/fast:
+	$(MAKE) -f CMakeFiles/splitrgb.dir/build.make CMakeFiles/splitrgb.dir/build
+.PHONY : splitrgb/fast
+
+#=============================================================================
+# Target rules for targets named sumrgb
+
+# Build rule for target.
+sumrgb: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sumrgb
+.PHONY : sumrgb
+
+# fast build rule for target.
+sumrgb/fast:
+	$(MAKE) -f CMakeFiles/sumrgb.dir/build.make CMakeFiles/sumrgb.dir/build
+.PHONY : sumrgb/fast
+
+#=============================================================================
 # Target rules for targets named switch
 
 # Build rule for target.
@@ -928,6 +954,60 @@ src/smoothImage.cpp.s:
 	$(MAKE) -f CMakeFiles/smoothImage.dir/build.make CMakeFiles/smoothImage.dir/src/smoothImage.cpp.s
 .PHONY : src/smoothImage.cpp.s
 
+src/splitrgb.o: src/splitrgb.cpp.o
+
+.PHONY : src/splitrgb.o
+
+# target to build an object file
+src/splitrgb.cpp.o:
+	$(MAKE) -f CMakeFiles/splitrgb.dir/build.make CMakeFiles/splitrgb.dir/src/splitrgb.cpp.o
+.PHONY : src/splitrgb.cpp.o
+
+src/splitrgb.i: src/splitrgb.cpp.i
+
+.PHONY : src/splitrgb.i
+
+# target to preprocess a source file
+src/splitrgb.cpp.i:
+	$(MAKE) -f CMakeFiles/splitrgb.dir/build.make CMakeFiles/splitrgb.dir/src/splitrgb.cpp.i
+.PHONY : src/splitrgb.cpp.i
+
+src/splitrgb.s: src/splitrgb.cpp.s
+
+.PHONY : src/splitrgb.s
+
+# target to generate assembly for a file
+src/splitrgb.cpp.s:
+	$(MAKE) -f CMakeFiles/splitrgb.dir/build.make CMakeFiles/splitrgb.dir/src/splitrgb.cpp.s
+.PHONY : src/splitrgb.cpp.s
+
+src/sumrgb.o: src/sumrgb.cpp.o
+
+.PHONY : src/sumrgb.o
+
+# target to build an object file
+src/sumrgb.cpp.o:
+	$(MAKE) -f CMakeFiles/sumrgb.dir/build.make CMakeFiles/sumrgb.dir/src/sumrgb.cpp.o
+.PHONY : src/sumrgb.cpp.o
+
+src/sumrgb.i: src/sumrgb.cpp.i
+
+.PHONY : src/sumrgb.i
+
+# target to preprocess a source file
+src/sumrgb.cpp.i:
+	$(MAKE) -f CMakeFiles/sumrgb.dir/build.make CMakeFiles/sumrgb.dir/src/sumrgb.cpp.i
+.PHONY : src/sumrgb.cpp.i
+
+src/sumrgb.s: src/sumrgb.cpp.s
+
+.PHONY : src/sumrgb.s
+
+# target to generate assembly for a file
+src/sumrgb.cpp.s:
+	$(MAKE) -f CMakeFiles/sumrgb.dir/build.make CMakeFiles/sumrgb.dir/src/sumrgb.cpp.s
+.PHONY : src/sumrgb.cpp.s
+
 src/switch.o: src/switch.cpp.o
 
 .PHONY : src/switch.o
@@ -990,6 +1070,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... splitrgb"
+	@echo "... sumrgb"
 	@echo "... switch"
 	@echo "... roi3"
 	@echo "... grayVideo"
@@ -1070,6 +1152,12 @@ help:
 	@echo "... src/smoothImage.o"
 	@echo "... src/smoothImage.i"
 	@echo "... src/smoothImage.s"
+	@echo "... src/splitrgb.o"
+	@echo "... src/splitrgb.i"
+	@echo "... src/splitrgb.s"
+	@echo "... src/sumrgb.o"
+	@echo "... src/sumrgb.i"
+	@echo "... src/sumrgb.s"
 	@echo "... src/switch.o"
 	@echo "... src/switch.i"
 	@echo "... src/switch.s"
