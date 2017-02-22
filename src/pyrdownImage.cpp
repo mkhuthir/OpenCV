@@ -2,9 +2,7 @@
 #include "cv.h"
 #include "highgui.h"
 
-IplImage* doPyrDown(
-  IplImage* in,
-  int       filter = IPL_GAUSSIAN_5x5)
+IplImage* doPyrDown(IplImage* in)
 {
 
     assert( in->width%2 == 0 && in->height%2 == 0 );

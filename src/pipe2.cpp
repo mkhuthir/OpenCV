@@ -18,9 +18,7 @@ IplImage* doCanny(
     return( out );
 };
 
-IplImage* doPyrDown(
-  IplImage* in,
-  int       filter = IPL_GAUSSIAN_5x5)
+IplImage* doPyrDown(IplImage* in)
 {
 
     // Best to make sure input image is divisible by two.

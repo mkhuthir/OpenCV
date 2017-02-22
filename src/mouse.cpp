@@ -56,7 +56,7 @@ int main( int argc, char* argv[] ) {
   //
   while( 1 ) {
  
-    cvCopyImage( image, temp );
+    cvCopy( image, temp );
     if( drawing_box ) draw_box( temp, box ); 
     cvShowImage( "Box Example", temp );
  

@@ -124,43 +124,43 @@ switch/fast:
 .PHONY : switch/fast
 
 #=============================================================================
-# Target rules for targets named mouse
+# Target rules for targets named roi3
 
 # Build rule for target.
-mouse: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mouse
-.PHONY : mouse
+roi3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roi3
+.PHONY : roi3
 
 # fast build rule for target.
-mouse/fast:
-	$(MAKE) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/build
-.PHONY : mouse/fast
+roi3/fast:
+	$(MAKE) -f CMakeFiles/roi3.dir/build.make CMakeFiles/roi3.dir/build
+.PHONY : roi3/fast
 
 #=============================================================================
-# Target rules for targets named capprop
+# Target rules for targets named grayVideo
 
 # Build rule for target.
-capprop: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 capprop
-.PHONY : capprop
+grayVideo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 grayVideo
+.PHONY : grayVideo
 
 # fast build rule for target.
-capprop/fast:
-	$(MAKE) -f CMakeFiles/capprop.dir/build.make CMakeFiles/capprop.dir/build
-.PHONY : capprop/fast
+grayVideo/fast:
+	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/build
+.PHONY : grayVideo/fast
 
 #=============================================================================
-# Target rules for targets named showImage2
+# Target rules for targets named showImage
 
 # Build rule for target.
-showImage2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 showImage2
-.PHONY : showImage2
+showImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 showImage
+.PHONY : showImage
 
 # fast build rule for target.
-showImage2/fast:
-	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/build
-.PHONY : showImage2/fast
+showImage/fast:
+	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/build
+.PHONY : showImage/fast
 
 #=============================================================================
 # Target rules for targets named matsum
@@ -174,6 +174,19 @@ matsum: cmake_check_build_system
 matsum/fast:
 	$(MAKE) -f CMakeFiles/matsum.dir/build.make CMakeFiles/matsum.dir/build
 .PHONY : matsum/fast
+
+#=============================================================================
+# Target rules for targets named capprop
+
+# Build rule for target.
+capprop: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 capprop
+.PHONY : capprop
+
+# fast build rule for target.
+capprop/fast:
+	$(MAKE) -f CMakeFiles/capprop.dir/build.make CMakeFiles/capprop.dir/build
+.PHONY : capprop/fast
 
 #=============================================================================
 # Target rules for targets named pipe2
@@ -200,6 +213,19 @@ saturate: cmake_check_build_system
 saturate/fast:
 	$(MAKE) -f CMakeFiles/saturate.dir/build.make CMakeFiles/saturate.dir/build
 .PHONY : saturate/fast
+
+#=============================================================================
+# Target rules for targets named mouse
+
+# Build rule for target.
+mouse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mouse
+.PHONY : mouse
+
+# fast build rule for target.
+mouse/fast:
+	$(MAKE) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/build
+.PHONY : mouse/fast
 
 #=============================================================================
 # Target rules for targets named pipe
@@ -319,45 +345,6 @@ pyrdownImage/fast:
 .PHONY : pyrdownImage/fast
 
 #=============================================================================
-# Target rules for targets named showImage
-
-# Build rule for target.
-showImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 showImage
-.PHONY : showImage
-
-# fast build rule for target.
-showImage/fast:
-	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/build
-.PHONY : showImage/fast
-
-#=============================================================================
-# Target rules for targets named grayVideo
-
-# Build rule for target.
-grayVideo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 grayVideo
-.PHONY : grayVideo
-
-# fast build rule for target.
-grayVideo/fast:
-	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/build
-.PHONY : grayVideo/fast
-
-#=============================================================================
-# Target rules for targets named roi3
-
-# Build rule for target.
-roi3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roi3
-.PHONY : roi3
-
-# fast build rule for target.
-roi3/fast:
-	$(MAKE) -f CMakeFiles/roi3.dir/build.make CMakeFiles/roi3.dir/build
-.PHONY : roi3/fast
-
-#=============================================================================
 # Target rules for targets named inimat
 
 # Build rule for target.
@@ -369,19 +356,6 @@ inimat: cmake_check_build_system
 inimat/fast:
 	$(MAKE) -f CMakeFiles/inimat.dir/build.make CMakeFiles/inimat.dir/build
 .PHONY : inimat/fast
-
-#=============================================================================
-# Target rules for targets named info
-
-# Build rule for target.
-info: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 info
-.PHONY : info
-
-# fast build rule for target.
-info/fast:
-	$(MAKE) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/build
-.PHONY : info/fast
 
 #=============================================================================
 # Target rules for targets named sliderAVI
@@ -597,33 +571,6 @@ src/grayVideo.cpp.s:
 	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/src/grayVideo.cpp.s
 .PHONY : src/grayVideo.cpp.s
 
-src/info.o: src/info.cpp.o
-
-.PHONY : src/info.o
-
-# target to build an object file
-src/info.cpp.o:
-	$(MAKE) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/src/info.cpp.o
-.PHONY : src/info.cpp.o
-
-src/info.i: src/info.cpp.i
-
-.PHONY : src/info.i
-
-# target to preprocess a source file
-src/info.cpp.i:
-	$(MAKE) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/src/info.cpp.i
-.PHONY : src/info.cpp.i
-
-src/info.s: src/info.cpp.s
-
-.PHONY : src/info.s
-
-# target to generate assembly for a file
-src/info.cpp.s:
-	$(MAKE) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/src/info.cpp.s
-.PHONY : src/info.cpp.s
-
 src/inimat.o: src/inimat.cpp.o
 
 .PHONY : src/inimat.o
@@ -819,8 +766,8 @@ src/roi.o: src/roi.cpp.o
 
 # target to build an object file
 src/roi.cpp.o:
-	$(MAKE) -f CMakeFiles/roi.dir/build.make CMakeFiles/roi.dir/src/roi.cpp.o
 	$(MAKE) -f CMakeFiles/roi3.dir/build.make CMakeFiles/roi3.dir/src/roi.cpp.o
+	$(MAKE) -f CMakeFiles/roi.dir/build.make CMakeFiles/roi.dir/src/roi.cpp.o
 	$(MAKE) -f CMakeFiles/roi2.dir/build.make CMakeFiles/roi2.dir/src/roi.cpp.o
 .PHONY : src/roi.cpp.o
 
@@ -830,8 +777,8 @@ src/roi.i: src/roi.cpp.i
 
 # target to preprocess a source file
 src/roi.cpp.i:
-	$(MAKE) -f CMakeFiles/roi.dir/build.make CMakeFiles/roi.dir/src/roi.cpp.i
 	$(MAKE) -f CMakeFiles/roi3.dir/build.make CMakeFiles/roi3.dir/src/roi.cpp.i
+	$(MAKE) -f CMakeFiles/roi.dir/build.make CMakeFiles/roi.dir/src/roi.cpp.i
 	$(MAKE) -f CMakeFiles/roi2.dir/build.make CMakeFiles/roi2.dir/src/roi.cpp.i
 .PHONY : src/roi.cpp.i
 
@@ -841,8 +788,8 @@ src/roi.s: src/roi.cpp.s
 
 # target to generate assembly for a file
 src/roi.cpp.s:
-	$(MAKE) -f CMakeFiles/roi.dir/build.make CMakeFiles/roi.dir/src/roi.cpp.s
 	$(MAKE) -f CMakeFiles/roi3.dir/build.make CMakeFiles/roi3.dir/src/roi.cpp.s
+	$(MAKE) -f CMakeFiles/roi.dir/build.make CMakeFiles/roi.dir/src/roi.cpp.s
 	$(MAKE) -f CMakeFiles/roi2.dir/build.make CMakeFiles/roi2.dir/src/roi.cpp.s
 .PHONY : src/roi.cpp.s
 
@@ -926,33 +873,6 @@ src/showImage.s: src/showImage.cpp.s
 src/showImage.cpp.s:
 	$(MAKE) -f CMakeFiles/showImage.dir/build.make CMakeFiles/showImage.dir/src/showImage.cpp.s
 .PHONY : src/showImage.cpp.s
-
-src/showImage2.o: src/showImage2.cpp.o
-
-.PHONY : src/showImage2.o
-
-# target to build an object file
-src/showImage2.cpp.o:
-	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/src/showImage2.cpp.o
-.PHONY : src/showImage2.cpp.o
-
-src/showImage2.i: src/showImage2.cpp.i
-
-.PHONY : src/showImage2.i
-
-# target to preprocess a source file
-src/showImage2.cpp.i:
-	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/src/showImage2.cpp.i
-.PHONY : src/showImage2.cpp.i
-
-src/showImage2.s: src/showImage2.cpp.s
-
-.PHONY : src/showImage2.s
-
-# target to generate assembly for a file
-src/showImage2.cpp.s:
-	$(MAKE) -f CMakeFiles/showImage2.dir/build.make CMakeFiles/showImage2.dir/src/showImage2.cpp.s
-.PHONY : src/showImage2.cpp.s
 
 src/sliderAVI.o: src/sliderAVI.cpp.o
 
@@ -1071,12 +991,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... switch"
-	@echo "... mouse"
-	@echo "... capprop"
-	@echo "... showImage2"
+	@echo "... roi3"
+	@echo "... grayVideo"
+	@echo "... showImage"
 	@echo "... matsum"
+	@echo "... capprop"
 	@echo "... pipe2"
 	@echo "... saturate"
+	@echo "... mouse"
 	@echo "... pipe"
 	@echo "... roi"
 	@echo "... camera"
@@ -1086,11 +1008,7 @@ help:
 	@echo "... cvmat"
 	@echo "... smoothImage"
 	@echo "... pyrdownImage"
-	@echo "... showImage"
-	@echo "... grayVideo"
-	@echo "... roi3"
 	@echo "... inimat"
-	@echo "... info"
 	@echo "... sliderAVI"
 	@echo "... savemat"
 	@echo "... writexml"
@@ -1113,9 +1031,6 @@ help:
 	@echo "... src/grayVideo.o"
 	@echo "... src/grayVideo.i"
 	@echo "... src/grayVideo.s"
-	@echo "... src/info.o"
-	@echo "... src/info.i"
-	@echo "... src/info.s"
 	@echo "... src/inimat.o"
 	@echo "... src/inimat.i"
 	@echo "... src/inimat.s"
@@ -1149,9 +1064,6 @@ help:
 	@echo "... src/showImage.o"
 	@echo "... src/showImage.i"
 	@echo "... src/showImage.s"
-	@echo "... src/showImage2.o"
-	@echo "... src/showImage2.i"
-	@echo "... src/showImage2.s"
 	@echo "... src/sliderAVI.o"
 	@echo "... src/sliderAVI.i"
 	@echo "... src/sliderAVI.s"

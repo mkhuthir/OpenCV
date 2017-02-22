@@ -90,24 +90,22 @@ displayAVI_EXTERNAL_OBJECTS =
 
 bin/displayAVI: CMakeFiles/displayAVI.dir/src/displayAVI.cpp.o
 bin/displayAVI: CMakeFiles/displayAVI.dir/build.make
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.9
-bin/displayAVI: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.9
+bin/displayAVI: /usr/local/lib/libopencv_shape.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_stitching.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_superres.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_videostab.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_objdetect.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_calib3d.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_features2d.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_flann.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_highgui.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_ml.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_photo.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_video.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_videoio.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_imgcodecs.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_imgproc.so.3.2.0
+bin/displayAVI: /usr/local/lib/libopencv_core.so.3.2.0
 bin/displayAVI: CMakeFiles/displayAVI.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mkhuthir/openCV/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/displayAVI"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/displayAVI.dir/link.txt --verbose=$(VERBOSE)

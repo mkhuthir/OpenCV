@@ -21,9 +21,7 @@ IplImage* doCanny(
 };
 //-----------------------------------------------------------
 
-IplImage* doPyrDown(
-  IplImage* in,
-  int       filter = IPL_GAUSSIAN_5x5)
+IplImage* doPyrDown(IplImage* in)
 {
 
     // Best to make sure input image is divisible by two.
@@ -48,8 +46,8 @@ int main( int argc, char** argv )
 
   //start an image processing pipe
   cvCvtColor(img_rgb, img_gry ,CV_BGR2GRAY);
-  IplImage* img_pyr  = doPyrDown( img_gry, IPL_GAUSSIAN_5x5 );
-  IplImage* img_pyr2 = doPyrDown( img_pyr, IPL_GAUSSIAN_5x5 );
+  IplImage* img_pyr  = doPyrDown( img_gry);
+  IplImage* img_pyr2 = doPyrDown( img_pyr);
   IplImage* img_cny  = doCanny( img_pyr2, 10, 100, 3 );
 
   // display results from each stage
