@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named threshold
+
+# Build rule for target.
+threshold: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 threshold
+.PHONY : threshold
+
+# fast build rule for target.
+threshold/fast:
+	$(MAKE) -f CMakeFiles/threshold.dir/build.make CMakeFiles/threshold.dir/build
+.PHONY : threshold/fast
+
+#=============================================================================
 # Target rules for targets named splitrgb
 
 # Build rule for target.
@@ -122,6 +135,19 @@ splitrgb: cmake_check_build_system
 splitrgb/fast:
 	$(MAKE) -f CMakeFiles/splitrgb.dir/build.make CMakeFiles/splitrgb.dir/build
 .PHONY : splitrgb/fast
+
+#=============================================================================
+# Target rules for targets named sumrgb2
+
+# Build rule for target.
+sumrgb2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sumrgb2
+.PHONY : sumrgb2
+
+# fast build rule for target.
+sumrgb2/fast:
+	$(MAKE) -f CMakeFiles/sumrgb2.dir/build.make CMakeFiles/sumrgb2.dir/build
+.PHONY : sumrgb2/fast
 
 #=============================================================================
 # Target rules for targets named sumrgb
@@ -1008,6 +1034,33 @@ src/sumrgb.cpp.s:
 	$(MAKE) -f CMakeFiles/sumrgb.dir/build.make CMakeFiles/sumrgb.dir/src/sumrgb.cpp.s
 .PHONY : src/sumrgb.cpp.s
 
+src/sumrgb2.o: src/sumrgb2.cpp.o
+
+.PHONY : src/sumrgb2.o
+
+# target to build an object file
+src/sumrgb2.cpp.o:
+	$(MAKE) -f CMakeFiles/sumrgb2.dir/build.make CMakeFiles/sumrgb2.dir/src/sumrgb2.cpp.o
+.PHONY : src/sumrgb2.cpp.o
+
+src/sumrgb2.i: src/sumrgb2.cpp.i
+
+.PHONY : src/sumrgb2.i
+
+# target to preprocess a source file
+src/sumrgb2.cpp.i:
+	$(MAKE) -f CMakeFiles/sumrgb2.dir/build.make CMakeFiles/sumrgb2.dir/src/sumrgb2.cpp.i
+.PHONY : src/sumrgb2.cpp.i
+
+src/sumrgb2.s: src/sumrgb2.cpp.s
+
+.PHONY : src/sumrgb2.s
+
+# target to generate assembly for a file
+src/sumrgb2.cpp.s:
+	$(MAKE) -f CMakeFiles/sumrgb2.dir/build.make CMakeFiles/sumrgb2.dir/src/sumrgb2.cpp.s
+.PHONY : src/sumrgb2.cpp.s
+
 src/switch.o: src/switch.cpp.o
 
 .PHONY : src/switch.o
@@ -1034,6 +1087,33 @@ src/switch.s: src/switch.cpp.s
 src/switch.cpp.s:
 	$(MAKE) -f CMakeFiles/switch.dir/build.make CMakeFiles/switch.dir/src/switch.cpp.s
 .PHONY : src/switch.cpp.s
+
+src/threshold.o: src/threshold.cpp.o
+
+.PHONY : src/threshold.o
+
+# target to build an object file
+src/threshold.cpp.o:
+	$(MAKE) -f CMakeFiles/threshold.dir/build.make CMakeFiles/threshold.dir/src/threshold.cpp.o
+.PHONY : src/threshold.cpp.o
+
+src/threshold.i: src/threshold.cpp.i
+
+.PHONY : src/threshold.i
+
+# target to preprocess a source file
+src/threshold.cpp.i:
+	$(MAKE) -f CMakeFiles/threshold.dir/build.make CMakeFiles/threshold.dir/src/threshold.cpp.i
+.PHONY : src/threshold.cpp.i
+
+src/threshold.s: src/threshold.cpp.s
+
+.PHONY : src/threshold.s
+
+# target to generate assembly for a file
+src/threshold.cpp.s:
+	$(MAKE) -f CMakeFiles/threshold.dir/build.make CMakeFiles/threshold.dir/src/threshold.cpp.s
+.PHONY : src/threshold.cpp.s
 
 src/writexml.o: src/writexml.cpp.o
 
@@ -1070,7 +1150,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... threshold"
 	@echo "... splitrgb"
+	@echo "... sumrgb2"
 	@echo "... sumrgb"
 	@echo "... switch"
 	@echo "... roi3"
@@ -1158,9 +1240,15 @@ help:
 	@echo "... src/sumrgb.o"
 	@echo "... src/sumrgb.i"
 	@echo "... src/sumrgb.s"
+	@echo "... src/sumrgb2.o"
+	@echo "... src/sumrgb2.i"
+	@echo "... src/sumrgb2.s"
 	@echo "... src/switch.o"
 	@echo "... src/switch.i"
 	@echo "... src/switch.s"
+	@echo "... src/threshold.o"
+	@echo "... src/threshold.i"
+	@echo "... src/threshold.s"
 	@echo "... src/writexml.o"
 	@echo "... src/writexml.i"
 	@echo "... src/writexml.s"

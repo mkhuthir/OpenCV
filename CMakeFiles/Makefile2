@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/mkhuthir/openCV
 CMAKE_BINARY_DIR = /home/mkhuthir/openCV
 
 #=============================================================================
+# Target rules for target CMakeFiles/threshold.dir
+
+# All Build rule for target.
+CMakeFiles/threshold.dir/all:
+	$(MAKE) -f CMakeFiles/threshold.dir/build.make CMakeFiles/threshold.dir/depend
+	$(MAKE) -f CMakeFiles/threshold.dir/build.make CMakeFiles/threshold.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/CMakeFiles --progress-num=51,52 "Built target threshold"
+.PHONY : CMakeFiles/threshold.dir/all
+
+# Include target in all.
+all: CMakeFiles/threshold.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/threshold.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/threshold.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/CMakeFiles 0
+.PHONY : CMakeFiles/threshold.dir/rule
+
+# Convenience name for target.
+threshold: CMakeFiles/threshold.dir/rule
+
+.PHONY : threshold
+
+# clean rule for target.
+CMakeFiles/threshold.dir/clean:
+	$(MAKE) -f CMakeFiles/threshold.dir/build.make CMakeFiles/threshold.dir/clean
+.PHONY : CMakeFiles/threshold.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/threshold.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/splitrgb.dir
 
 # All Build rule for target.
@@ -93,6 +130,43 @@ CMakeFiles/splitrgb.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/splitrgb.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sumrgb2.dir
+
+# All Build rule for target.
+CMakeFiles/sumrgb2.dir/all:
+	$(MAKE) -f CMakeFiles/sumrgb2.dir/build.make CMakeFiles/sumrgb2.dir/depend
+	$(MAKE) -f CMakeFiles/sumrgb2.dir/build.make CMakeFiles/sumrgb2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/CMakeFiles --progress-num=47,48 "Built target sumrgb2"
+.PHONY : CMakeFiles/sumrgb2.dir/all
+
+# Include target in all.
+all: CMakeFiles/sumrgb2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sumrgb2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sumrgb2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhuthir/openCV/CMakeFiles 0
+.PHONY : CMakeFiles/sumrgb2.dir/rule
+
+# Convenience name for target.
+sumrgb2: CMakeFiles/sumrgb2.dir/rule
+
+.PHONY : sumrgb2
+
+# clean rule for target.
+CMakeFiles/sumrgb2.dir/clean:
+	$(MAKE) -f CMakeFiles/sumrgb2.dir/build.make CMakeFiles/sumrgb2.dir/clean
+.PHONY : CMakeFiles/sumrgb2.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/sumrgb2.dir/clean
 
 .PHONY : clean
 
@@ -140,7 +214,7 @@ clean: CMakeFiles/sumrgb.dir/clean
 CMakeFiles/switch.dir/all:
 	$(MAKE) -f CMakeFiles/switch.dir/build.make CMakeFiles/switch.dir/depend
 	$(MAKE) -f CMakeFiles/switch.dir/build.make CMakeFiles/switch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/CMakeFiles --progress-num=47,48 "Built target switch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/CMakeFiles --progress-num=49,50 "Built target switch"
 .PHONY : CMakeFiles/switch.dir/all
 
 # Include target in all.
@@ -917,7 +991,7 @@ clean: CMakeFiles/savemat.dir/clean
 CMakeFiles/writexml.dir/all:
 	$(MAKE) -f CMakeFiles/writexml.dir/build.make CMakeFiles/writexml.dir/depend
 	$(MAKE) -f CMakeFiles/writexml.dir/build.make CMakeFiles/writexml.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/CMakeFiles --progress-num=49,50 "Built target writexml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhuthir/openCV/CMakeFiles --progress-num=53,54 "Built target writexml"
 .PHONY : CMakeFiles/writexml.dir/all
 
 # Include target in all.
