@@ -36,6 +36,10 @@ using namespace std;
     //Value (0 - 255)
     cvCreateTrackbar("LowV","Control",&iLowV, 255); 
     cvCreateTrackbar("HighV","Control",&iHighV,255);
+    //Add image to control window to set its size!
+    IplImage* spacer=cvCreateImage(cvSize(500,2),IPL_DEPTH_8U,1);
+    cvZero(spacer);
+    cvShowImage("Control",spacer);
 
     while (true)
     {
@@ -68,7 +72,7 @@ using namespace std;
         
         //show the original & Thresholded images
         imshow("Original", imgOriginal);
-        imshow("Thresholded Image", imgThresholded);
+        imshow("Threshold Image", imgThresholded);
         
         if (waitKey(30) == 27) //wait for 'esc' key press for 30ms. If 'esc' key is pressed, break loop
             {
