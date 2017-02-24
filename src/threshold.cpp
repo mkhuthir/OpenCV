@@ -1,7 +1,8 @@
 
-#include <cv.h>
-#include <highgui.h>
-#include <math.h>
+#include "opencv2/highgui/highgui.hpp"
+
+using namespace cv;
+
 IplImage *Igray=0, *It = 0, *Iat;
 int main( int argc, char** argv )
 {

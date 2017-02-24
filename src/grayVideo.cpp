@@ -1,6 +1,7 @@
-#include "cv.h"
-#include "highgui.h"
-#include <stdio.h>
+
+#include "opencv2/highgui/highgui.hpp"
+
+using namespace cv;
 
 main( int argc, char* argv[] ) {
 

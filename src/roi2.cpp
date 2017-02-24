@@ -1,8 +1,7 @@
 
-#include <cv.h>
-#include <highgui.h>
+#include "opencv2/highgui/highgui.hpp"
 
-// ch3_ex3_13 image_name x y width height add# 
+using namespace cv;
 
 int main(int argc, char** argv)
 {

@@ -7,34 +7,12 @@
 #IncludeRegexTransform: 
 
 /home/mkhuthir/openCV/src/capprop.cpp
-cv.h
--
-highgui.h
--
-stdio.h
--
-
-/usr/local/include/opencv/cv.h
-opencv2/core/core_c.h
-/usr/local/include/opencv/opencv2/core/core_c.h
-opencv2/imgproc/imgproc_c.h
-/usr/local/include/opencv/opencv2/imgproc/imgproc_c.h
-opencv2/photo/photo_c.h
-/usr/local/include/opencv/opencv2/photo/photo_c.h
-opencv2/video/tracking_c.h
-/usr/local/include/opencv/opencv2/video/tracking_c.h
-opencv2/objdetect/objdetect_c.h
-/usr/local/include/opencv/opencv2/objdetect/objdetect_c.h
+opencv2/highgui/highgui.hpp
+/home/mkhuthir/openCV/src/opencv2/highgui/highgui.hpp
 
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h
 /usr/local/include/opencv/opencv2/core/core_c.h
-
-/usr/local/include/opencv/highgui.h
-opencv2/core/core_c.h
-/usr/local/include/opencv/opencv2/core/core_c.h
-opencv2/highgui/highgui_c.h
-/usr/local/include/opencv/opencv2/highgui/highgui_c.h
 
 /usr/local/include/opencv2/calib3d.hpp
 opencv2/core.hpp
@@ -755,6 +733,10 @@ opencv2/videoio.hpp
 /usr/local/include/opencv2/opencv2/videoio.hpp
 opencv2/highgui/highgui_c.h
 /usr/local/include/opencv2/opencv2/highgui/highgui_c.h
+
+/usr/local/include/opencv2/highgui/highgui.hpp
+opencv2/highgui.hpp
+/usr/local/include/opencv2/highgui/opencv2/highgui.hpp
 
 /usr/local/include/opencv2/highgui/highgui_c.h
 opencv2/core/core_c.h

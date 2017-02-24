@@ -1,6 +1,7 @@
 
-#include <cv.h>
-#include <highgui.h>
+#include "opencv2/highgui/highgui.hpp"
+
+using namespace cv;
  
 // Define our callback which we will install for
 // mouse events.

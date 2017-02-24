@@ -1,10 +1,10 @@
 
-#include <cv.h>
-#include <highgui.h>
+#include "opencv2/highgui/highgui.hpp"
+
+using namespace cv;
 
 int main(int argc, char** argv)
 {
-
 
     CvPoint2D32f srcTri[3], dstTri[3];
     CvMat* rot_mat = cvCreateMat(2,3,CV_32FC1);

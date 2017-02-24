@@ -1,9 +1,7 @@
 
-// alphablend <imageA> <image B> <x> <y> <width> <height> 
-//            <alpha> <beta>
-#include <cv.h>
-#include <highgui.h>
-#include <stdio.h>
+#include "opencv2/highgui/highgui.hpp"
+
+using namespace cv;
 
 int main(int argc, char** argv)
 {

@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/hsvdetect.dir/DependInfo.cmake"
   "CMakeFiles/dft.dir/DependInfo.cmake"
   "CMakeFiles/logpolar.dir/DependInfo.cmake"
   "CMakeFiles/houghcircles.dir/DependInfo.cmake"

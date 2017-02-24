@@ -1,12 +1,8 @@
 
-#include <cv.h>
-#include <highgui.h>
-#include <stdio.h>
+#include "opencv2/highgui/highgui.hpp"
 
-//
-// Using a trackbar to create a "switch" that the user can turn on and off.
-// We make this value global so everyone can see it.
-//
+using namespace cv;
+
 int g_switch_value = 1;
 void switch_off_function() {printf("Pause\n");}; //YOU COULD DO SOMETHING WITH THESE FUNCTIONS TOO
 void switch_on_function() {printf("Run\n");}; 

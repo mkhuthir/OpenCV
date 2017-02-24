@@ -1,8 +1,7 @@
 
-#include <stdio.h>
-#include <cv.h>
-#include <highgui.h>
+#include "opencv2/highgui/highgui.hpp"
 
+using namespace cv;
 
 void sum_rgb( IplImage* src, IplImage* dst ) {
   // Allocate individual image planes.

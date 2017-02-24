@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named hsvdetect
+
+# Build rule for target.
+hsvdetect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hsvdetect
+.PHONY : hsvdetect
+
+# fast build rule for target.
+hsvdetect/fast:
+	$(MAKE) -f CMakeFiles/hsvdetect.dir/build.make CMakeFiles/hsvdetect.dir/build
+.PHONY : hsvdetect/fast
+
+#=============================================================================
 # Target rules for targets named dft
 
 # Build rule for target.
@@ -769,6 +782,33 @@ src/houghcircles.cpp.s:
 	$(MAKE) -f CMakeFiles/houghcircles.dir/build.make CMakeFiles/houghcircles.dir/src/houghcircles.cpp.s
 .PHONY : src/houghcircles.cpp.s
 
+src/hsvdetect.o: src/hsvdetect.cpp.o
+
+.PHONY : src/hsvdetect.o
+
+# target to build an object file
+src/hsvdetect.cpp.o:
+	$(MAKE) -f CMakeFiles/hsvdetect.dir/build.make CMakeFiles/hsvdetect.dir/src/hsvdetect.cpp.o
+.PHONY : src/hsvdetect.cpp.o
+
+src/hsvdetect.i: src/hsvdetect.cpp.i
+
+.PHONY : src/hsvdetect.i
+
+# target to preprocess a source file
+src/hsvdetect.cpp.i:
+	$(MAKE) -f CMakeFiles/hsvdetect.dir/build.make CMakeFiles/hsvdetect.dir/src/hsvdetect.cpp.i
+.PHONY : src/hsvdetect.cpp.i
+
+src/hsvdetect.s: src/hsvdetect.cpp.s
+
+.PHONY : src/hsvdetect.s
+
+# target to generate assembly for a file
+src/hsvdetect.cpp.s:
+	$(MAKE) -f CMakeFiles/hsvdetect.dir/build.make CMakeFiles/hsvdetect.dir/src/hsvdetect.cpp.s
+.PHONY : src/hsvdetect.cpp.s
+
 src/inimat.o: src/inimat.cpp.o
 
 .PHONY : src/inimat.o
@@ -1349,6 +1389,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... hsvdetect"
 	@echo "... rebuild_cache"
 	@echo "... dft"
 	@echo "... logpolar"
@@ -1409,6 +1450,9 @@ help:
 	@echo "... src/houghcircles.o"
 	@echo "... src/houghcircles.i"
 	@echo "... src/houghcircles.s"
+	@echo "... src/hsvdetect.o"
+	@echo "... src/hsvdetect.i"
+	@echo "... src/hsvdetect.s"
 	@echo "... src/inimat.o"
 	@echo "... src/inimat.i"
 	@echo "... src/inimat.s"

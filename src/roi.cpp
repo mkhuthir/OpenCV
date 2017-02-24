@@ -1,6 +1,8 @@
 
-#include <cv.h>
-#include <highgui.h>
+#include "opencv2/highgui/highgui.hpp"
+
+using namespace cv;
+
 //  ./roi image_name x y width height add#
 // ./bin/roi dat/stuff.jpg 50 100 300 200 100
 

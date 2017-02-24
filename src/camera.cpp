@@ -1,5 +1,7 @@
-#include "cv.h"
-#include "highgui.h"
+
+#include "opencv2/highgui/highgui.hpp"
+
+using namespace cv;
 
 int main( int argc, char** argv ) { 
     cvNamedWindow( "Camera", CV_WINDOW_AUTOSIZE );

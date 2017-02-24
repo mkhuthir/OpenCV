@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include <iostream>
-#include <fstream>
-#include "cv.h"
-#include "highgui.h"
 
+#include "opencv2/highgui/highgui.hpp"
+#include <fstream>
+#include <iostream>
+
+using namespace cv;
 using namespace std;
 
 int        g_slider_position = 0;

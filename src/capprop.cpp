@@ -1,7 +1,8 @@
 
-#include <cv.h>
-#include <highgui.h>
-#include <stdio.h>
+#include "opencv2/highgui/highgui.hpp"
+
+using namespace cv;
+
 int main(int argc, char** argv)
 {
    //Adding something to open a video so that we can read its properties ...
