@@ -48,10 +48,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/dft.dir/DependInfo.cmake"
+  "CMakeFiles/logpolar.dir/DependInfo.cmake"
   "CMakeFiles/houghcircles.dir/DependInfo.cmake"
   "CMakeFiles/threshold.dir/DependInfo.cmake"
   "CMakeFiles/splitrgb.dir/DependInfo.cmake"
   "CMakeFiles/sumrgb2.dir/DependInfo.cmake"
+  "CMakeFiles/affine.dir/DependInfo.cmake"
   "CMakeFiles/sumrgb.dir/DependInfo.cmake"
   "CMakeFiles/switch.dir/DependInfo.cmake"
   "CMakeFiles/roi3.dir/DependInfo.cmake"
@@ -70,6 +73,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/canny.dir/DependInfo.cmake"
   "CMakeFiles/cvmat.dir/DependInfo.cmake"
   "CMakeFiles/smoothImage.dir/DependInfo.cmake"
+  "CMakeFiles/warp.dir/DependInfo.cmake"
   "CMakeFiles/pyrdownImage.dir/DependInfo.cmake"
   "CMakeFiles/inimat.dir/DependInfo.cmake"
   "CMakeFiles/sliderAVI.dir/DependInfo.cmake"

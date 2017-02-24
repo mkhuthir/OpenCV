@@ -1,9 +1,12 @@
 /home/mkhuthir/openCV/CMakeFiles/edit_cache.dir
 /home/mkhuthir/openCV/CMakeFiles/rebuild_cache.dir
+/home/mkhuthir/openCV/CMakeFiles/dft.dir
+/home/mkhuthir/openCV/CMakeFiles/logpolar.dir
 /home/mkhuthir/openCV/CMakeFiles/houghcircles.dir
 /home/mkhuthir/openCV/CMakeFiles/threshold.dir
 /home/mkhuthir/openCV/CMakeFiles/splitrgb.dir
 /home/mkhuthir/openCV/CMakeFiles/sumrgb2.dir
+/home/mkhuthir/openCV/CMakeFiles/affine.dir
 /home/mkhuthir/openCV/CMakeFiles/sumrgb.dir
 /home/mkhuthir/openCV/CMakeFiles/switch.dir
 /home/mkhuthir/openCV/CMakeFiles/roi3.dir
@@ -22,6 +25,7 @@
 /home/mkhuthir/openCV/CMakeFiles/canny.dir
 /home/mkhuthir/openCV/CMakeFiles/cvmat.dir
 /home/mkhuthir/openCV/CMakeFiles/smoothImage.dir
+/home/mkhuthir/openCV/CMakeFiles/warp.dir
 /home/mkhuthir/openCV/CMakeFiles/pyrdownImage.dir
 /home/mkhuthir/openCV/CMakeFiles/inimat.dir
 /home/mkhuthir/openCV/CMakeFiles/sliderAVI.dir

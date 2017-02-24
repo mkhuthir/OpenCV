@@ -1,20 +1,7 @@
 
 /*
-You'll have to tune to detect the circles you expect
-vSeq* cvHoughCircles( 
-	CvArr* image,			//Da image
-	void* storage,			//Storage for sequences
-	int method, 			//Always CV_HOUGH_GRADIENT until you, reader, invent a better method
-	double dp, 				//Hough space shrinkage. a bit larger is faster, might detect better,
-	double min_dist,		//Damps out multiple detection in the same area
-   double param1=100,   //High Canny threshold (edge thresh), low is half (link finding). See Canny
-   double param2=100,   //Threshold where we declare detection in Canny space
-   int min_radius=0,    //Smallest circle to find
-   int max_radius=0     //Largest circle to find
-  );
+void HoughCircles(InputArray image, OutputArray circles, int method, double dp, double minDist, double param1=100, double param2=100, int minRadius=0, int maxRadius=0 );
 */
-
-
 
 #include <cv.h>
 #include <highgui.h>

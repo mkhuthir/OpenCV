@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named dft
+
+# Build rule for target.
+dft: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dft
+.PHONY : dft
+
+# fast build rule for target.
+dft/fast:
+	$(MAKE) -f CMakeFiles/dft.dir/build.make CMakeFiles/dft.dir/build
+.PHONY : dft/fast
+
+#=============================================================================
+# Target rules for targets named logpolar
+
+# Build rule for target.
+logpolar: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 logpolar
+.PHONY : logpolar
+
+# fast build rule for target.
+logpolar/fast:
+	$(MAKE) -f CMakeFiles/logpolar.dir/build.make CMakeFiles/logpolar.dir/build
+.PHONY : logpolar/fast
+
+#=============================================================================
 # Target rules for targets named houghcircles
 
 # Build rule for target.
@@ -161,6 +187,19 @@ sumrgb2: cmake_check_build_system
 sumrgb2/fast:
 	$(MAKE) -f CMakeFiles/sumrgb2.dir/build.make CMakeFiles/sumrgb2.dir/build
 .PHONY : sumrgb2/fast
+
+#=============================================================================
+# Target rules for targets named affine
+
+# Build rule for target.
+affine: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 affine
+.PHONY : affine
+
+# fast build rule for target.
+affine/fast:
+	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/build
+.PHONY : affine/fast
 
 #=============================================================================
 # Target rules for targets named sumrgb
@@ -397,6 +436,19 @@ smoothImage/fast:
 .PHONY : smoothImage/fast
 
 #=============================================================================
+# Target rules for targets named warp
+
+# Build rule for target.
+warp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 warp
+.PHONY : warp
+
+# fast build rule for target.
+warp/fast:
+	$(MAKE) -f CMakeFiles/warp.dir/build.make CMakeFiles/warp.dir/build
+.PHONY : warp/fast
+
+#=============================================================================
 # Target rules for targets named pyrdownImage
 
 # Build rule for target.
@@ -473,6 +525,33 @@ roi2: cmake_check_build_system
 roi2/fast:
 	$(MAKE) -f CMakeFiles/roi2.dir/build.make CMakeFiles/roi2.dir/build
 .PHONY : roi2/fast
+
+src/affine.o: src/affine.cpp.o
+
+.PHONY : src/affine.o
+
+# target to build an object file
+src/affine.cpp.o:
+	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/src/affine.cpp.o
+.PHONY : src/affine.cpp.o
+
+src/affine.i: src/affine.cpp.i
+
+.PHONY : src/affine.i
+
+# target to preprocess a source file
+src/affine.cpp.i:
+	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/src/affine.cpp.i
+.PHONY : src/affine.cpp.i
+
+src/affine.s: src/affine.cpp.s
+
+.PHONY : src/affine.s
+
+# target to generate assembly for a file
+src/affine.cpp.s:
+	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/src/affine.cpp.s
+.PHONY : src/affine.cpp.s
 
 src/camera.o: src/camera.cpp.o
 
@@ -582,6 +661,33 @@ src/cvmat.cpp.s:
 	$(MAKE) -f CMakeFiles/cvmat.dir/build.make CMakeFiles/cvmat.dir/src/cvmat.cpp.s
 .PHONY : src/cvmat.cpp.s
 
+src/dft.o: src/dft.cpp.o
+
+.PHONY : src/dft.o
+
+# target to build an object file
+src/dft.cpp.o:
+	$(MAKE) -f CMakeFiles/dft.dir/build.make CMakeFiles/dft.dir/src/dft.cpp.o
+.PHONY : src/dft.cpp.o
+
+src/dft.i: src/dft.cpp.i
+
+.PHONY : src/dft.i
+
+# target to preprocess a source file
+src/dft.cpp.i:
+	$(MAKE) -f CMakeFiles/dft.dir/build.make CMakeFiles/dft.dir/src/dft.cpp.i
+.PHONY : src/dft.cpp.i
+
+src/dft.s: src/dft.cpp.s
+
+.PHONY : src/dft.s
+
+# target to generate assembly for a file
+src/dft.cpp.s:
+	$(MAKE) -f CMakeFiles/dft.dir/build.make CMakeFiles/dft.dir/src/dft.cpp.s
+.PHONY : src/dft.cpp.s
+
 src/displayAVI.o: src/displayAVI.cpp.o
 
 .PHONY : src/displayAVI.o
@@ -689,6 +795,33 @@ src/inimat.s: src/inimat.cpp.s
 src/inimat.cpp.s:
 	$(MAKE) -f CMakeFiles/inimat.dir/build.make CMakeFiles/inimat.dir/src/inimat.cpp.s
 .PHONY : src/inimat.cpp.s
+
+src/logpolar.o: src/logpolar.cpp.o
+
+.PHONY : src/logpolar.o
+
+# target to build an object file
+src/logpolar.cpp.o:
+	$(MAKE) -f CMakeFiles/logpolar.dir/build.make CMakeFiles/logpolar.dir/src/logpolar.cpp.o
+.PHONY : src/logpolar.cpp.o
+
+src/logpolar.i: src/logpolar.cpp.i
+
+.PHONY : src/logpolar.i
+
+# target to preprocess a source file
+src/logpolar.cpp.i:
+	$(MAKE) -f CMakeFiles/logpolar.dir/build.make CMakeFiles/logpolar.dir/src/logpolar.cpp.i
+.PHONY : src/logpolar.cpp.i
+
+src/logpolar.s: src/logpolar.cpp.s
+
+.PHONY : src/logpolar.s
+
+# target to generate assembly for a file
+src/logpolar.cpp.s:
+	$(MAKE) -f CMakeFiles/logpolar.dir/build.make CMakeFiles/logpolar.dir/src/logpolar.cpp.s
+.PHONY : src/logpolar.cpp.s
 
 src/matsum.o: src/matsum.cpp.o
 
@@ -1155,6 +1288,33 @@ src/threshold.cpp.s:
 	$(MAKE) -f CMakeFiles/threshold.dir/build.make CMakeFiles/threshold.dir/src/threshold.cpp.s
 .PHONY : src/threshold.cpp.s
 
+src/warp.o: src/warp.cpp.o
+
+.PHONY : src/warp.o
+
+# target to build an object file
+src/warp.cpp.o:
+	$(MAKE) -f CMakeFiles/warp.dir/build.make CMakeFiles/warp.dir/src/warp.cpp.o
+.PHONY : src/warp.cpp.o
+
+src/warp.i: src/warp.cpp.i
+
+.PHONY : src/warp.i
+
+# target to preprocess a source file
+src/warp.cpp.i:
+	$(MAKE) -f CMakeFiles/warp.dir/build.make CMakeFiles/warp.dir/src/warp.cpp.i
+.PHONY : src/warp.cpp.i
+
+src/warp.s: src/warp.cpp.s
+
+.PHONY : src/warp.s
+
+# target to generate assembly for a file
+src/warp.cpp.s:
+	$(MAKE) -f CMakeFiles/warp.dir/build.make CMakeFiles/warp.dir/src/warp.cpp.s
+.PHONY : src/warp.cpp.s
+
 src/writexml.o: src/writexml.cpp.o
 
 .PHONY : src/writexml.o
@@ -1190,10 +1350,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... dft"
+	@echo "... logpolar"
 	@echo "... houghcircles"
 	@echo "... threshold"
 	@echo "... splitrgb"
 	@echo "... sumrgb2"
+	@echo "... affine"
 	@echo "... sumrgb"
 	@echo "... switch"
 	@echo "... roi3"
@@ -1212,12 +1375,16 @@ help:
 	@echo "... canny"
 	@echo "... cvmat"
 	@echo "... smoothImage"
+	@echo "... warp"
 	@echo "... pyrdownImage"
 	@echo "... inimat"
 	@echo "... sliderAVI"
 	@echo "... savemat"
 	@echo "... writexml"
 	@echo "... roi2"
+	@echo "... src/affine.o"
+	@echo "... src/affine.i"
+	@echo "... src/affine.s"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
@@ -1230,6 +1397,9 @@ help:
 	@echo "... src/cvmat.o"
 	@echo "... src/cvmat.i"
 	@echo "... src/cvmat.s"
+	@echo "... src/dft.o"
+	@echo "... src/dft.i"
+	@echo "... src/dft.s"
 	@echo "... src/displayAVI.o"
 	@echo "... src/displayAVI.i"
 	@echo "... src/displayAVI.s"
@@ -1242,6 +1412,9 @@ help:
 	@echo "... src/inimat.o"
 	@echo "... src/inimat.i"
 	@echo "... src/inimat.s"
+	@echo "... src/logpolar.o"
+	@echo "... src/logpolar.i"
+	@echo "... src/logpolar.s"
 	@echo "... src/matsum.o"
 	@echo "... src/matsum.i"
 	@echo "... src/matsum.s"
@@ -1293,6 +1466,9 @@ help:
 	@echo "... src/threshold.o"
 	@echo "... src/threshold.i"
 	@echo "... src/threshold.s"
+	@echo "... src/warp.o"
+	@echo "... src/warp.i"
+	@echo "... src/warp.s"
 	@echo "... src/writexml.o"
 	@echo "... src/writexml.i"
 	@echo "... src/writexml.s"

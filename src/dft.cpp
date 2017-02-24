@@ -1,10 +1,4 @@
 
-//
-// Example 6-5. Use of cvDFT() to accelerate the computation of convolutions
-// Use DFT to accelerate the convolution of array A by kernel B.
-// Place the result in array V.
-//
-
 
 #include <cv.h>
 #include <highgui.h>
@@ -22,11 +16,7 @@ int main(int argc, char** argv)
 
     // it is also possible to have only abs(M2-M1)+1×abs(N2-N1)+1
     // part of the full convolution result
-    CvMat* conv = cvCreateMat(
-      A->rows+B->rows-1,
-      A->cols+B->cols-1,
-      A->type
-    );
+    CvMat* conv = cvCreateMat(A->rows+B->rows-1,A->cols+B->cols-1, A->type);
 
     int dft_M = cvGetOptimalDFTSize( A->rows+B->rows-1 );
     int dft_N = cvGetOptimalDFTSize( A->cols+B->cols-1 );
@@ -39,11 +29,7 @@ int main(int argc, char** argv)
     //
     cvGetSubRect( dft_A, &tmp, cvRect(0,0,A->cols,A->rows));
     cvCopy( A, &tmp );
-    cvGetSubRect( 
-      dft_A,
-      &tmp,
-      cvRect( A->cols, 0, dft_A->cols-A->cols, A->rows )
-    );
+    cvGetSubRect(dft_A,&tmp,cvRect( A->cols, 0, dft_A->cols-A->cols, A->rows ));
     cvZero( &tmp );
 
     // no need to pad bottom part of dft_A with zeros because of
@@ -55,11 +41,7 @@ int main(int argc, char** argv)
     //
     cvGetSubRect( dft_B, &tmp, cvRect(0,0,B->cols,B->rows) );
     cvCopy( B, &tmp );
-    cvGetSubRect(
-      dft_B, 
-      &tmp, 
-      cvRect( B->cols, 0, dft_B->cols-B->cols, B->rows )
-    );
+    cvGetSubRect(dft_B, &tmp, cvRect( B->cols, 0, dft_B->cols-B->cols, B->rows ));
     cvZero( &tmp );
 
     // no need to pad bottom part of dft_B with zeros because of
