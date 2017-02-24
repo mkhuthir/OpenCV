@@ -9,8 +9,8 @@ int main(int argc, char** argv)
     int M2 = 2;
     int N1 = 2;
     int N2 = 2;
+
     // initialize A and B
-    //
     CvMat* A = cvCreateMat( M1, N1, CV_32F );
     CvMat* B = cvCreateMat( M2, N2, A->type );
 
@@ -59,5 +59,12 @@ int main(int argc, char** argv)
     cvGetSubRect( dft_A, &tmp, cvRect(0,0,conv->cols,conv->rows) );
 
     cvCopy( &tmp, conv );
+
+    cvReleaseMat(&A);
+    cvReleaseMat(&B);
+    cvReleaseMat(&conv);
+    cvReleaseMat(&dft_A);
+    cvReleaseMat(&dft_B);
+    
 }
 
