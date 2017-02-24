@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/houghcircles.dir/DependInfo.cmake"
   "CMakeFiles/threshold.dir/DependInfo.cmake"
   "CMakeFiles/splitrgb.dir/DependInfo.cmake"
   "CMakeFiles/sumrgb2.dir/DependInfo.cmake"

@@ -1,5 +1,6 @@
 /home/mkhuthir/openCV/CMakeFiles/edit_cache.dir
 /home/mkhuthir/openCV/CMakeFiles/rebuild_cache.dir
+/home/mkhuthir/openCV/CMakeFiles/houghcircles.dir
 /home/mkhuthir/openCV/CMakeFiles/threshold.dir
 /home/mkhuthir/openCV/CMakeFiles/splitrgb.dir
 /home/mkhuthir/openCV/CMakeFiles/sumrgb2.dir

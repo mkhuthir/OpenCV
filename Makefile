@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named houghcircles
+
+# Build rule for target.
+houghcircles: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 houghcircles
+.PHONY : houghcircles
+
+# fast build rule for target.
+houghcircles/fast:
+	$(MAKE) -f CMakeFiles/houghcircles.dir/build.make CMakeFiles/houghcircles.dir/build
+.PHONY : houghcircles/fast
+
+#=============================================================================
 # Target rules for targets named threshold
 
 # Build rule for target.
@@ -622,6 +635,33 @@ src/grayVideo.s: src/grayVideo.cpp.s
 src/grayVideo.cpp.s:
 	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/src/grayVideo.cpp.s
 .PHONY : src/grayVideo.cpp.s
+
+src/houghcircles.o: src/houghcircles.cpp.o
+
+.PHONY : src/houghcircles.o
+
+# target to build an object file
+src/houghcircles.cpp.o:
+	$(MAKE) -f CMakeFiles/houghcircles.dir/build.make CMakeFiles/houghcircles.dir/src/houghcircles.cpp.o
+.PHONY : src/houghcircles.cpp.o
+
+src/houghcircles.i: src/houghcircles.cpp.i
+
+.PHONY : src/houghcircles.i
+
+# target to preprocess a source file
+src/houghcircles.cpp.i:
+	$(MAKE) -f CMakeFiles/houghcircles.dir/build.make CMakeFiles/houghcircles.dir/src/houghcircles.cpp.i
+.PHONY : src/houghcircles.cpp.i
+
+src/houghcircles.s: src/houghcircles.cpp.s
+
+.PHONY : src/houghcircles.s
+
+# target to generate assembly for a file
+src/houghcircles.cpp.s:
+	$(MAKE) -f CMakeFiles/houghcircles.dir/build.make CMakeFiles/houghcircles.dir/src/houghcircles.cpp.s
+.PHONY : src/houghcircles.cpp.s
 
 src/inimat.o: src/inimat.cpp.o
 
@@ -1150,6 +1190,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... houghcircles"
 	@echo "... threshold"
 	@echo "... splitrgb"
 	@echo "... sumrgb2"
@@ -1195,6 +1236,9 @@ help:
 	@echo "... src/grayVideo.o"
 	@echo "... src/grayVideo.i"
 	@echo "... src/grayVideo.s"
+	@echo "... src/houghcircles.o"
+	@echo "... src/houghcircles.i"
+	@echo "... src/houghcircles.s"
 	@echo "... src/inimat.o"
 	@echo "... src/inimat.i"
 	@echo "... src/inimat.s"
