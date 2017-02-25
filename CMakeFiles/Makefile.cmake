@@ -50,6 +50,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/hsvdetect.dir/DependInfo.cmake"
   "CMakeFiles/dft.dir/DependInfo.cmake"
+  "CMakeFiles/hist.dir/DependInfo.cmake"
   "CMakeFiles/logpolar.dir/DependInfo.cmake"
   "CMakeFiles/houghcircles.dir/DependInfo.cmake"
   "CMakeFiles/hsvdetect2.dir/DependInfo.cmake"
@@ -67,6 +68,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/pipe2.dir/DependInfo.cmake"
   "CMakeFiles/saturate.dir/DependInfo.cmake"
   "CMakeFiles/mouse.dir/DependInfo.cmake"
+  "CMakeFiles/hist2.dir/DependInfo.cmake"
   "CMakeFiles/pipe.dir/DependInfo.cmake"
   "CMakeFiles/roi.dir/DependInfo.cmake"
   "CMakeFiles/camera.dir/DependInfo.cmake"

@@ -2,6 +2,7 @@
 /home/mkhuthir/openCV/CMakeFiles/hsvdetect.dir
 /home/mkhuthir/openCV/CMakeFiles/rebuild_cache.dir
 /home/mkhuthir/openCV/CMakeFiles/dft.dir
+/home/mkhuthir/openCV/CMakeFiles/hist.dir
 /home/mkhuthir/openCV/CMakeFiles/logpolar.dir
 /home/mkhuthir/openCV/CMakeFiles/houghcircles.dir
 /home/mkhuthir/openCV/CMakeFiles/hsvdetect2.dir
@@ -19,6 +20,7 @@
 /home/mkhuthir/openCV/CMakeFiles/pipe2.dir
 /home/mkhuthir/openCV/CMakeFiles/saturate.dir
 /home/mkhuthir/openCV/CMakeFiles/mouse.dir
+/home/mkhuthir/openCV/CMakeFiles/hist2.dir
 /home/mkhuthir/openCV/CMakeFiles/pipe.dir
 /home/mkhuthir/openCV/CMakeFiles/roi.dir
 /home/mkhuthir/openCV/CMakeFiles/camera.dir

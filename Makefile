@@ -137,6 +137,19 @@ dft/fast:
 .PHONY : dft/fast
 
 #=============================================================================
+# Target rules for targets named hist
+
+# Build rule for target.
+hist: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hist
+.PHONY : hist
+
+# fast build rule for target.
+hist/fast:
+	$(MAKE) -f CMakeFiles/hist.dir/build.make CMakeFiles/hist.dir/build
+.PHONY : hist/fast
+
+#=============================================================================
 # Target rules for targets named logpolar
 
 # Build rule for target.
@@ -356,6 +369,19 @@ mouse: cmake_check_build_system
 mouse/fast:
 	$(MAKE) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/build
 .PHONY : mouse/fast
+
+#=============================================================================
+# Target rules for targets named hist2
+
+# Build rule for target.
+hist2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hist2
+.PHONY : hist2
+
+# fast build rule for target.
+hist2/fast:
+	$(MAKE) -f CMakeFiles/hist2.dir/build.make CMakeFiles/hist2.dir/build
+.PHONY : hist2/fast
 
 #=============================================================================
 # Target rules for targets named pipe
@@ -767,6 +793,60 @@ src/grayVideo.s: src/grayVideo.cpp.s
 src/grayVideo.cpp.s:
 	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/src/grayVideo.cpp.s
 .PHONY : src/grayVideo.cpp.s
+
+src/hist.o: src/hist.cpp.o
+
+.PHONY : src/hist.o
+
+# target to build an object file
+src/hist.cpp.o:
+	$(MAKE) -f CMakeFiles/hist.dir/build.make CMakeFiles/hist.dir/src/hist.cpp.o
+.PHONY : src/hist.cpp.o
+
+src/hist.i: src/hist.cpp.i
+
+.PHONY : src/hist.i
+
+# target to preprocess a source file
+src/hist.cpp.i:
+	$(MAKE) -f CMakeFiles/hist.dir/build.make CMakeFiles/hist.dir/src/hist.cpp.i
+.PHONY : src/hist.cpp.i
+
+src/hist.s: src/hist.cpp.s
+
+.PHONY : src/hist.s
+
+# target to generate assembly for a file
+src/hist.cpp.s:
+	$(MAKE) -f CMakeFiles/hist.dir/build.make CMakeFiles/hist.dir/src/hist.cpp.s
+.PHONY : src/hist.cpp.s
+
+src/hist2.o: src/hist2.cpp.o
+
+.PHONY : src/hist2.o
+
+# target to build an object file
+src/hist2.cpp.o:
+	$(MAKE) -f CMakeFiles/hist2.dir/build.make CMakeFiles/hist2.dir/src/hist2.cpp.o
+.PHONY : src/hist2.cpp.o
+
+src/hist2.i: src/hist2.cpp.i
+
+.PHONY : src/hist2.i
+
+# target to preprocess a source file
+src/hist2.cpp.i:
+	$(MAKE) -f CMakeFiles/hist2.dir/build.make CMakeFiles/hist2.dir/src/hist2.cpp.i
+.PHONY : src/hist2.cpp.i
+
+src/hist2.s: src/hist2.cpp.s
+
+.PHONY : src/hist2.s
+
+# target to generate assembly for a file
+src/hist2.cpp.s:
+	$(MAKE) -f CMakeFiles/hist2.dir/build.make CMakeFiles/hist2.dir/src/hist2.cpp.s
+.PHONY : src/hist2.cpp.s
 
 src/houghcircles.o: src/houghcircles.cpp.o
 
@@ -1432,6 +1512,7 @@ help:
 	@echo "... hsvdetect"
 	@echo "... rebuild_cache"
 	@echo "... dft"
+	@echo "... hist"
 	@echo "... logpolar"
 	@echo "... houghcircles"
 	@echo "... hsvdetect2"
@@ -1449,6 +1530,7 @@ help:
 	@echo "... pipe2"
 	@echo "... saturate"
 	@echo "... mouse"
+	@echo "... hist2"
 	@echo "... pipe"
 	@echo "... roi"
 	@echo "... camera"
@@ -1488,6 +1570,12 @@ help:
 	@echo "... src/grayVideo.o"
 	@echo "... src/grayVideo.i"
 	@echo "... src/grayVideo.s"
+	@echo "... src/hist.o"
+	@echo "... src/hist.i"
+	@echo "... src/hist.s"
+	@echo "... src/hist2.o"
+	@echo "... src/hist2.i"
+	@echo "... src/hist2.s"
 	@echo "... src/houghcircles.o"
 	@echo "... src/houghcircles.i"
 	@echo "... src/houghcircles.s"

@@ -1,98 +1,16 @@
-# EXAMPLES OF HOW TO RUN THE PROGRAMS ASSUMING YOU ARE IN THEIR DIRECTORY
-# On Linux, make the files using "make" (which will invoke Makefile in the directory)
-# If you just copy programs from the pdf of the book, watch out that the 
-# quote characters aren't special characters. 
-#
-# I put a calibration pattern, OpenCV_Chessboard.png in this directory
-# print it out and tape it to any rigid object like a book or binder. It's
-# for use with the camera calibration programs in Chapter 11.
-#
-
-#------------------------------------------------------------------------#
-#CHAPTER 2 PROGRAMS:
-./ch2_ex2_1 stuff.jpg
-./ch2_ex2_2 test.avi
-./ch2_ex2_3 test.avi
-./ch2_ex2_4 stuff.jpg 
-./ch2_ex2_5 stuff.jpg 
-./ch2_ex2_6 stuff.jpg 
-./ch2_ex2_7 stuff.jpg 
-./ch2_ex2_8 stuff.jpg 
-  
-  # With video camera: 
-./ch2_ex2_9     
-
-  # Using movie file: 
-./ch2_ex2_9 test.avi
-
-  # Writing won't work if you are using gstreamer. Use ffmpeg but might have to have developer libs from ffmpeg 
-./ch2_ex2_10 test.avi log_polar_out.avi
-
-
-#------------------------------------------------------------------------#
-#CHAPTER 3 PROGRAMS:   
-  ch3_ex3_1.txt  [not a program]
-  ch3_ex3_2.txt  [not a program]
-./ch3_ex3_3
-./ch3_ex3_4
-./ch3_ex3_5
-  ch3_ex3_6.txt  [not a program]
-  ch3_ex3_7.txt  [not a program]
-  ch3_ex3_8.txt  [not a program]  
-./ch3_ex3_9
-  ch3_ex3_10.txt [not a program]
-./ch3_ex3_11 stuff.jpg
-./ch3_ex3_12 stuff.jpg 50 100 300 200 100
-./ch3_ex3_13 stuff.jpg 50 100 300 200 100
-./ch3_ex3_14 stuff.jpg adrian.jpg 50 100 300 200 0.5 0.5
-./ch3_ex3_15
-  ch3_ex3_16.txt [not a program]
-./ch3_ex3_17
-  ch3_ex3_18.xml [not a program]
-./ch3_ex3_19
-./ch3_ex3_20
-
-
-#------------------------------------------------------------------------#
-#CHAPTER 4 PROGRAMS
-./ch4_ex4_1 
-./ch4_ex4_2 test.avi
-./ch4_ex4_3 test.avi
-
-
-#------------------------------------------------------------------------#
-#CHAPTER 5 PROGRAMS
-./ch5_ex5_1 stuff.jpg 
-./ch5_ex5_2 adrian.jpg
-./ch5_ex5_3 adrian.jpg
-./ch5_ex5_4 15 1 1 71 15 adrian.jpg 
-
-#------------------------------------------------------------------------#
-#CHAPTER 6
-./ch6_ex6_1 stuff.jpg
-./ch6_ex6_2 stuff.jpg 
-./ch6_ex6_3 adrian.jpg 
-./ch6_ex6_4 stuff.jpg 100
-./ch6_ex6_5 
 
 
 #------------------------------------------------------------------------#
 #CHAPTER 7
 ./ch7_ex7_1 adrian.jpg 
-  ch7_ex7_2.txt  [not a program]
 ./ch7_ex7_3_expanded HandIndoorColor.jpg HandOutdoorSunColor.jpg HandOutdoorColor.jpg adrian.jpg 
-  ch7_ex7_4.txt  [not a program]
 ./ch7_ex7_5_HistBackProj BlueCup.jpg adrian.jpg 0
 ./ch7_ex7_5 faceTemplate.jpg faceScene.jpg 
-
-
 #------------------------------------------------------------------------#
 #CHAPTER 8
   ch8_ex8_1.txt  [not a program]
 ./ch8_ex8_2 adrian.jpg 
 ./ch8_ex8_3 faceTemplate.jpg 
-
-
 #------------------------------------------------------------------------#
 #CHAPTER 9
 ./ch9_ex9_1 test.avi 
@@ -156,25 +74,3 @@ ch9_ClearStaleCB_Entries.cpp [not built as a program]
 ./ch12_ex12_3
 
 ./ch12_ex12_4
-
-
-#------------------------------------------------------------------------#
-#CHAPTER 13
-./ch13_ex13_1
-./ch13_ex13_2
-./ch13_ex13_3
-./ch13_ex13_4
-
-
-
-
-
-#------------------------------------------------------------------------#
-#CHAPTER 14
-  # You fill in these
-
-
-
-
-
-  
