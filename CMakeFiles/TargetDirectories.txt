@@ -4,6 +4,7 @@
 /home/mkhuthir/openCV/CMakeFiles/dft.dir
 /home/mkhuthir/openCV/CMakeFiles/logpolar.dir
 /home/mkhuthir/openCV/CMakeFiles/houghcircles.dir
+/home/mkhuthir/openCV/CMakeFiles/hsvdetect2.dir
 /home/mkhuthir/openCV/CMakeFiles/threshold.dir
 /home/mkhuthir/openCV/CMakeFiles/splitrgb.dir
 /home/mkhuthir/openCV/CMakeFiles/sumrgb2.dir

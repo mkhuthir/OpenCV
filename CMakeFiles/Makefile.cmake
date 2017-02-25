@@ -52,6 +52,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/dft.dir/DependInfo.cmake"
   "CMakeFiles/logpolar.dir/DependInfo.cmake"
   "CMakeFiles/houghcircles.dir/DependInfo.cmake"
+  "CMakeFiles/hsvdetect2.dir/DependInfo.cmake"
   "CMakeFiles/threshold.dir/DependInfo.cmake"
   "CMakeFiles/splitrgb.dir/DependInfo.cmake"
   "CMakeFiles/sumrgb2.dir/DependInfo.cmake"
