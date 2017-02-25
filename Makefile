@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named matchtemplate
+
+# Build rule for target.
+matchtemplate: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matchtemplate
+.PHONY : matchtemplate
+
+# fast build rule for target.
+matchtemplate/fast:
+	$(MAKE) -f CMakeFiles/matchtemplate.dir/build.make CMakeFiles/matchtemplate.dir/build
+.PHONY : matchtemplate/fast
+
+#=============================================================================
+# Target rules for targets named histbackproj
+
+# Build rule for target.
+histbackproj: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 histbackproj
+.PHONY : histbackproj
+
+# fast build rule for target.
+histbackproj/fast:
+	$(MAKE) -f CMakeFiles/histbackproj.dir/build.make CMakeFiles/histbackproj.dir/build
+.PHONY : histbackproj/fast
+
+#=============================================================================
 # Target rules for targets named hsvdetect
 
 # Build rule for target.
@@ -408,6 +434,19 @@ roi: cmake_check_build_system
 roi/fast:
 	$(MAKE) -f CMakeFiles/roi.dir/build.make CMakeFiles/roi.dir/build
 .PHONY : roi/fast
+
+#=============================================================================
+# Target rules for targets named histcmp
+
+# Build rule for target.
+histcmp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 histcmp
+.PHONY : histcmp
+
+# fast build rule for target.
+histcmp/fast:
+	$(MAKE) -f CMakeFiles/histcmp.dir/build.make CMakeFiles/histcmp.dir/build
+.PHONY : histcmp/fast
 
 #=============================================================================
 # Target rules for targets named camera
@@ -848,6 +887,60 @@ src/hist2.cpp.s:
 	$(MAKE) -f CMakeFiles/hist2.dir/build.make CMakeFiles/hist2.dir/src/hist2.cpp.s
 .PHONY : src/hist2.cpp.s
 
+src/histbackproj.o: src/histbackproj.cpp.o
+
+.PHONY : src/histbackproj.o
+
+# target to build an object file
+src/histbackproj.cpp.o:
+	$(MAKE) -f CMakeFiles/histbackproj.dir/build.make CMakeFiles/histbackproj.dir/src/histbackproj.cpp.o
+.PHONY : src/histbackproj.cpp.o
+
+src/histbackproj.i: src/histbackproj.cpp.i
+
+.PHONY : src/histbackproj.i
+
+# target to preprocess a source file
+src/histbackproj.cpp.i:
+	$(MAKE) -f CMakeFiles/histbackproj.dir/build.make CMakeFiles/histbackproj.dir/src/histbackproj.cpp.i
+.PHONY : src/histbackproj.cpp.i
+
+src/histbackproj.s: src/histbackproj.cpp.s
+
+.PHONY : src/histbackproj.s
+
+# target to generate assembly for a file
+src/histbackproj.cpp.s:
+	$(MAKE) -f CMakeFiles/histbackproj.dir/build.make CMakeFiles/histbackproj.dir/src/histbackproj.cpp.s
+.PHONY : src/histbackproj.cpp.s
+
+src/histcmp.o: src/histcmp.cpp.o
+
+.PHONY : src/histcmp.o
+
+# target to build an object file
+src/histcmp.cpp.o:
+	$(MAKE) -f CMakeFiles/histcmp.dir/build.make CMakeFiles/histcmp.dir/src/histcmp.cpp.o
+.PHONY : src/histcmp.cpp.o
+
+src/histcmp.i: src/histcmp.cpp.i
+
+.PHONY : src/histcmp.i
+
+# target to preprocess a source file
+src/histcmp.cpp.i:
+	$(MAKE) -f CMakeFiles/histcmp.dir/build.make CMakeFiles/histcmp.dir/src/histcmp.cpp.i
+.PHONY : src/histcmp.cpp.i
+
+src/histcmp.s: src/histcmp.cpp.s
+
+.PHONY : src/histcmp.s
+
+# target to generate assembly for a file
+src/histcmp.cpp.s:
+	$(MAKE) -f CMakeFiles/histcmp.dir/build.make CMakeFiles/histcmp.dir/src/histcmp.cpp.s
+.PHONY : src/histcmp.cpp.s
+
 src/houghcircles.o: src/houghcircles.cpp.o
 
 .PHONY : src/houghcircles.o
@@ -982,6 +1075,33 @@ src/logpolar.s: src/logpolar.cpp.s
 src/logpolar.cpp.s:
 	$(MAKE) -f CMakeFiles/logpolar.dir/build.make CMakeFiles/logpolar.dir/src/logpolar.cpp.s
 .PHONY : src/logpolar.cpp.s
+
+src/matchtemplate.o: src/matchtemplate.cpp.o
+
+.PHONY : src/matchtemplate.o
+
+# target to build an object file
+src/matchtemplate.cpp.o:
+	$(MAKE) -f CMakeFiles/matchtemplate.dir/build.make CMakeFiles/matchtemplate.dir/src/matchtemplate.cpp.o
+.PHONY : src/matchtemplate.cpp.o
+
+src/matchtemplate.i: src/matchtemplate.cpp.i
+
+.PHONY : src/matchtemplate.i
+
+# target to preprocess a source file
+src/matchtemplate.cpp.i:
+	$(MAKE) -f CMakeFiles/matchtemplate.dir/build.make CMakeFiles/matchtemplate.dir/src/matchtemplate.cpp.i
+.PHONY : src/matchtemplate.cpp.i
+
+src/matchtemplate.s: src/matchtemplate.cpp.s
+
+.PHONY : src/matchtemplate.s
+
+# target to generate assembly for a file
+src/matchtemplate.cpp.s:
+	$(MAKE) -f CMakeFiles/matchtemplate.dir/build.make CMakeFiles/matchtemplate.dir/src/matchtemplate.cpp.s
+.PHONY : src/matchtemplate.cpp.s
 
 src/matsum.o: src/matsum.cpp.o
 
@@ -1509,6 +1629,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... matchtemplate"
+	@echo "... histbackproj"
 	@echo "... hsvdetect"
 	@echo "... rebuild_cache"
 	@echo "... dft"
@@ -1533,6 +1655,7 @@ help:
 	@echo "... hist2"
 	@echo "... pipe"
 	@echo "... roi"
+	@echo "... histcmp"
 	@echo "... camera"
 	@echo "... displayAVI"
 	@echo "... readxml"
@@ -1576,6 +1699,12 @@ help:
 	@echo "... src/hist2.o"
 	@echo "... src/hist2.i"
 	@echo "... src/hist2.s"
+	@echo "... src/histbackproj.o"
+	@echo "... src/histbackproj.i"
+	@echo "... src/histbackproj.s"
+	@echo "... src/histcmp.o"
+	@echo "... src/histcmp.i"
+	@echo "... src/histcmp.s"
 	@echo "... src/houghcircles.o"
 	@echo "... src/houghcircles.i"
 	@echo "... src/houghcircles.s"
@@ -1591,6 +1720,9 @@ help:
 	@echo "... src/logpolar.o"
 	@echo "... src/logpolar.i"
 	@echo "... src/logpolar.s"
+	@echo "... src/matchtemplate.o"
+	@echo "... src/matchtemplate.i"
+	@echo "... src/matchtemplate.s"
 	@echo "... src/matsum.o"
 	@echo "... src/matsum.i"
 	@echo "... src/matsum.s"

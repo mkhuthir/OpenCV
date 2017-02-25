@@ -1,4 +1,6 @@
 /home/mkhuthir/openCV/CMakeFiles/edit_cache.dir
+/home/mkhuthir/openCV/CMakeFiles/matchtemplate.dir
+/home/mkhuthir/openCV/CMakeFiles/histbackproj.dir
 /home/mkhuthir/openCV/CMakeFiles/hsvdetect.dir
 /home/mkhuthir/openCV/CMakeFiles/rebuild_cache.dir
 /home/mkhuthir/openCV/CMakeFiles/dft.dir
@@ -23,6 +25,7 @@
 /home/mkhuthir/openCV/CMakeFiles/hist2.dir
 /home/mkhuthir/openCV/CMakeFiles/pipe.dir
 /home/mkhuthir/openCV/CMakeFiles/roi.dir
+/home/mkhuthir/openCV/CMakeFiles/histcmp.dir
 /home/mkhuthir/openCV/CMakeFiles/camera.dir
 /home/mkhuthir/openCV/CMakeFiles/displayAVI.dir
 /home/mkhuthir/openCV/CMakeFiles/readxml.dir

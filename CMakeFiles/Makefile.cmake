@@ -48,6 +48,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/matchtemplate.dir/DependInfo.cmake"
+  "CMakeFiles/histbackproj.dir/DependInfo.cmake"
   "CMakeFiles/hsvdetect.dir/DependInfo.cmake"
   "CMakeFiles/dft.dir/DependInfo.cmake"
   "CMakeFiles/hist.dir/DependInfo.cmake"
@@ -71,6 +73,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/hist2.dir/DependInfo.cmake"
   "CMakeFiles/pipe.dir/DependInfo.cmake"
   "CMakeFiles/roi.dir/DependInfo.cmake"
+  "CMakeFiles/histcmp.dir/DependInfo.cmake"
   "CMakeFiles/camera.dir/DependInfo.cmake"
   "CMakeFiles/displayAVI.dir/DependInfo.cmake"
   "CMakeFiles/readxml.dir/DependInfo.cmake"
