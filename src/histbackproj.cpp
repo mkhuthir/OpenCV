@@ -36,10 +36,10 @@ int main( int argc, char** argv ) {
         float  s_ranges[]  = { 0, 255 }; 
         const float* ranges[]    = { h_ranges, s_ranges };
 		int scale = 10;
-#define patchx 61
-#define patchy 61
+
 //		Mat dst(src[1].size(),CV_8UC1,Scalar(0,0,0)); //One way of initialization
 //		Mat dst = Mat::zeros(src[1].size(),CV_8UC1); //Another way of initialization
+
 		Mat dst(src[1].size(),CV_8UC1);
 		dst.setTo(Scalar(0,0,0)); //Another way of zero'ing a matrix
 
@@ -56,7 +56,7 @@ int main( int argc, char** argv ) {
     			{
     				float hval = hist[i].at<float>(h, s);
     				rectangle(hist_img[i], Rect(h*scale, s*scale, scale, scale),
-    						Scalar::all(hval), -1);
+					Scalar::all(hval), -1);
     			}
 		}//For the 2 images
 
