@@ -2,14 +2,24 @@
 # By: Muthanna A. Attyah 2017
 #
 
-cmake_minimum_required(VERSION 3.5.0)
+cmake_minimum_required(VERSION 3.5)
 
 project(OpenCV)
 
+find_package( OpenCV REQUIRED )
+
+# print some info.
+message(STATUS "----------------------------------------")
+message(STATUS "OpenCV library status:")
+message(STATUS "    version: ${OpenCV_VERSION}")
+message(STATUS "    libraries: ${OpenCV_LIBS}")
+message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
+message(STATUS "----------------------------------------")
+
+include_directories(${OpenCV_INCLUDE_DIRS})
+
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-
-find_package( OpenCV REQUIRED )
 
 # OpenCV Examples:
 add_executable(displayAVI 	src/displayAVI.cpp)
@@ -51,6 +61,7 @@ add_executable(hist2       src/hist2.cpp)
 add_executable(histcmp     src/histcmp.cpp)
 add_executable(histbackproj src/histbackproj.cpp)
 add_executable(matchtemplate src/matchtemplate.cpp)
+add_executable(hello_ocv src/hello_ocv.cpp)
 
 target_link_libraries(sliderAVI 	${OpenCV_LIBS})
 target_link_libraries(displayAVI 	${OpenCV_LIBS})
@@ -91,3 +102,4 @@ target_link_libraries(hist2        ${OpenCV_LIBS})
 target_link_libraries(histcmp      ${OpenCV_LIBS})
 target_link_libraries(histbackproj ${OpenCV_LIBS})
 target_link_libraries(matchtemplate ${OpenCV_LIBS})
+target_link_libraries(hello_ocv ${OpenCV_LIBS})

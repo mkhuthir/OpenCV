@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named hello_ocv
+
+# Build rule for target.
+hello_ocv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello_ocv
+.PHONY : hello_ocv
+
+# fast build rule for target.
+hello_ocv/fast:
+	$(MAKE) -f CMakeFiles/hello_ocv.dir/build.make CMakeFiles/hello_ocv.dir/build
+.PHONY : hello_ocv/fast
+
+#=============================================================================
 # Target rules for targets named matchtemplate
 
 # Build rule for target.
@@ -832,6 +845,33 @@ src/grayVideo.s: src/grayVideo.cpp.s
 src/grayVideo.cpp.s:
 	$(MAKE) -f CMakeFiles/grayVideo.dir/build.make CMakeFiles/grayVideo.dir/src/grayVideo.cpp.s
 .PHONY : src/grayVideo.cpp.s
+
+src/hello_ocv.o: src/hello_ocv.cpp.o
+
+.PHONY : src/hello_ocv.o
+
+# target to build an object file
+src/hello_ocv.cpp.o:
+	$(MAKE) -f CMakeFiles/hello_ocv.dir/build.make CMakeFiles/hello_ocv.dir/src/hello_ocv.cpp.o
+.PHONY : src/hello_ocv.cpp.o
+
+src/hello_ocv.i: src/hello_ocv.cpp.i
+
+.PHONY : src/hello_ocv.i
+
+# target to preprocess a source file
+src/hello_ocv.cpp.i:
+	$(MAKE) -f CMakeFiles/hello_ocv.dir/build.make CMakeFiles/hello_ocv.dir/src/hello_ocv.cpp.i
+.PHONY : src/hello_ocv.cpp.i
+
+src/hello_ocv.s: src/hello_ocv.cpp.s
+
+.PHONY : src/hello_ocv.s
+
+# target to generate assembly for a file
+src/hello_ocv.cpp.s:
+	$(MAKE) -f CMakeFiles/hello_ocv.dir/build.make CMakeFiles/hello_ocv.dir/src/hello_ocv.cpp.s
+.PHONY : src/hello_ocv.cpp.s
 
 src/hist.o: src/hist.cpp.o
 
@@ -1629,6 +1669,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... hello_ocv"
 	@echo "... matchtemplate"
 	@echo "... histbackproj"
 	@echo "... hsvdetect"
@@ -1693,6 +1734,9 @@ help:
 	@echo "... src/grayVideo.o"
 	@echo "... src/grayVideo.i"
 	@echo "... src/grayVideo.s"
+	@echo "... src/hello_ocv.o"
+	@echo "... src/hello_ocv.i"
+	@echo "... src/hello_ocv.s"
 	@echo "... src/hist.o"
 	@echo "... src/hist.i"
 	@echo "... src/hist.s"

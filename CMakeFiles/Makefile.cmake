@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/hello_ocv.dir/DependInfo.cmake"
   "CMakeFiles/matchtemplate.dir/DependInfo.cmake"
   "CMakeFiles/histbackproj.dir/DependInfo.cmake"
   "CMakeFiles/hsvdetect.dir/DependInfo.cmake"

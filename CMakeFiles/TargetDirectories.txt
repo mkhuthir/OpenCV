@@ -1,4 +1,5 @@
 /home/mkhuthir/openCV/CMakeFiles/edit_cache.dir
+/home/mkhuthir/openCV/CMakeFiles/hello_ocv.dir
 /home/mkhuthir/openCV/CMakeFiles/matchtemplate.dir
 /home/mkhuthir/openCV/CMakeFiles/histbackproj.dir
 /home/mkhuthir/openCV/CMakeFiles/hsvdetect.dir
