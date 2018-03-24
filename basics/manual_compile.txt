@@ -1,0 +1,1 @@
+g++ loadimage.cpp -o loadimage `pkg-config --cflags --libs opencv`
