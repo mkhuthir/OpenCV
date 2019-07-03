@@ -16,6 +16,7 @@ message(STATUS "    libraries: ${OpenCV_LIBS}")
 message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
 message(STATUS "----------------------------------------")
 
+# include directores
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 # OpenCV Examples:
@@ -65,9 +66,9 @@ target_link_libraries(displayAVI 	${OpenCV_LIBS})
 target_link_libraries(smoothImage 	${OpenCV_LIBS})
 target_link_libraries(pyrdownImage 	${OpenCV_LIBS})
 target_link_libraries(canny      	${OpenCV_LIBS})
-target_link_libraries(pipe          ${OpenCV_LIBS})
-target_link_libraries(pipe2         ${OpenCV_LIBS})
-target_link_libraries(showImage     ${OpenCV_LIBS})
+target_link_libraries(pipe          	${OpenCV_LIBS})
+target_link_libraries(pipe2		${OpenCV_LIBS})
+target_link_libraries(showImage		${OpenCV_LIBS})
 target_link_libraries(camera        ${OpenCV_LIBS})
 target_link_libraries(grayVideo     ${OpenCV_LIBS})
 target_link_libraries(inimat        ${OpenCV_LIBS})
