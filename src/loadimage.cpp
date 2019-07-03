@@ -12,8 +12,6 @@ int main( )
 
     imshow( "Display window", image );                   
 
-    cout << image;
-
     waitKey(0);                                          
 
     return 0;
