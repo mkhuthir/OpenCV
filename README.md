@@ -5,8 +5,8 @@ How to compile c++ code:
 
 ```bash
 
-cd /bin
-cmake ..
-make
+$ cd ~/repo_opencv_cpp/bin
+$ cmake ..
+$ make
 
 ```
