@@ -11,7 +11,7 @@ int main(int argc, char** argv)
 
     IplImage* src;
     cvNamedWindow("Example3_12_pre", CV_WINDOW_AUTOSIZE);
-    cvNamedWindow("Example3_12_post", CV_WINDOW_AUTOSIZE);  
+    cvNamedWindow("Example3_12_post", CV_WINDOW_AUTOSIZE);
     if( argc == 7 && ((src=cvLoadImage(argv[1],1)) != 0 ))
     {
 		int x = atoi(argv[2]);
@@ -28,6 +28,6 @@ int main(int argc, char** argv)
     }
   cvReleaseImage( &src );
   cvDestroyWindow("Example3_12_pre");
-  cvDestroyWindow("Example3_12_post");   
+  cvDestroyWindow("Example3_12_post");
     return 0;
 }
