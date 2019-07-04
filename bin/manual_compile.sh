@@ -1,3 +1,3 @@
 #!/bin/sh
 
-g++ src/loadimage.cpp -o bin/loadimage `pkg-config --cflags --libs opencv`
+g++ ../src/loadimage.cpp -o loadimage `pkg-config --cflags --libs opencv`

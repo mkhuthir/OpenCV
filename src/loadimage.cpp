@@ -5,14 +5,14 @@ using namespace cv;
 using namespace std;
 
 int main( )
-{ 
-    Mat image = imread("dat/fruits.jpg", CV_LOAD_IMAGE_COLOR);                                
+{
+    Mat image = imread("../dat/fruits.jpg", CV_LOAD_IMAGE_COLOR);
 
-    namedWindow( "Display window", WINDOW_AUTOSIZE );    
+    namedWindow( "Display window", WINDOW_AUTOSIZE );
 
-    imshow( "Display window", image );                   
+    imshow( "Display window", image );
 
-    waitKey(0);                                          
+    waitKey(0);
 
     return 0;
 }
